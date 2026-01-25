@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import bg from "../../assets/bg.jpg";
+import API_BASE_URL from '../../config/api';
 
 const ApplyNow = () => {
   const navigate = useNavigate();
@@ -48,7 +49,7 @@ const ApplyNow = () => {
     }
     
     try {
-      const response = await fetch('http://localhost:5000/api/forms/apply-now', {
+      const response = await fetch(`${API_BASE_URL}/api/forms/apply-now`, {
         method: 'POST',
         body: formDataToSend
       });

@@ -2,6 +2,7 @@ import React, { useState,useEffect } from 'react';
 import Navbar from '../../Components/Navbar';
 import Footer from '../../Components/Footer';
 import bg from '../../assets/bg.jpg'; // CSR-style background
+import API_BASE_URL from '../../config/api';
 
 // Countries list
 const COUNTRIES = [
@@ -159,7 +160,7 @@ const ProductRegistration = () => {
         formDataToSend.append('invoiceFile', formData.invoiceFile);
       }
       
-      const response = await fetch('http://localhost:5000/api/forms/warranty-registration', {
+      const response = await fetch(`${API_BASE_URL}/api/forms/warranty-registration`, {
         method: 'POST',
         body: formDataToSend
       });

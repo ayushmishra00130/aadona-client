@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
+import API_BASE_URL from '../../config/api';
 import {
   ClipboardList,
   FileWarning,
@@ -122,7 +123,7 @@ const RequestDOA = () => {
     }
     
     try {
-      const response = await fetch('http://localhost:5000/api/forms/request-doa', {
+      const response = await fetch(`${API_BASE_URL}/api/forms/request-doa`, {
         method: 'POST',
         body: formDataToSend
       });

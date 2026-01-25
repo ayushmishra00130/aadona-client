@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import bg from "../../assets/bg.jpg";
+import API_BASE_URL from '../../config/api';
 
 const COUNTRIES = [
   "Afghanistan","Aland Islands","Albania","Algeria","American Samoa","Andorra","Angola","Anguilla","Antarctica",
@@ -67,7 +68,7 @@ export default function RequestDemo() {
     e.preventDefault();
     
     try {
-      const response = await fetch('http://localhost:5000/api/forms/request-demo', {
+      const response = await fetch(`${API_BASE_URL}/api/forms/request-demo`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

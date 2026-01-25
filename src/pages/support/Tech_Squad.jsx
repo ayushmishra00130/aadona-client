@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
+import API_BASE_URL from '../../config/api';
 import {
   Wrench,
   ClipboardList,
@@ -115,7 +116,7 @@ const TechSquad = () => {
     }
     
     try {
-      const response = await fetch('http://localhost:5000/api/forms/tech-squad', {
+      const response = await fetch(`${API_BASE_URL}/api/forms/tech-squad`, {
         method: 'POST',
         body: formDataToSend
       });

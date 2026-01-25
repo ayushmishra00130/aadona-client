@@ -2,6 +2,7 @@ import { useState, useCallback, useMemo, useEffect } from 'react';
 import Footer from '../Components/Footer';
 import Navbar from '../Components/Navbar';
 import bg from "../assets/bg.jpg";  // ✅ CSR BG imported
+import API_BASE_URL from '../config/api';
 
 const businessOptions = [
   'Choose an option',
@@ -94,7 +95,7 @@ export default function App() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('http://localhost:5000/api/forms/contact', {
+      const response = await fetch(`${API_BASE_URL}/api/forms/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import bg from "../../assets/bg.jpg";
+import API_BASE_URL from '../../config/api';
 
 const WhistleBlowerButton = () => {
   const navigate = useNavigate();
@@ -44,7 +45,7 @@ const WhistleBlowerButton = () => {
     }
     
     try {
-      const response = await fetch('http://localhost:5000/api/forms/whistle-blower', {
+      const response = await fetch(`${API_BASE_URL}/api/forms/whistle-blower`, {
         method: 'POST',
         body: formDataToSend
       });

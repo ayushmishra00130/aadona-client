@@ -2,6 +2,7 @@ import React, { useState,useEffect } from 'react';
 import Navbar from '../../Components/Navbar';
 import Footer from '../../Components/Footer';
 import bg from '../../assets/bg.jpg';
+import API_BASE_URL from '../../config/api';
 
 const RequestTraining = () => {
   const COUNTRIES = [
@@ -61,7 +62,7 @@ const RequestTraining = () => {
     e.preventDefault();
     
     try {
-      const response = await fetch('http://localhost:5000/api/forms/request-training', {
+      const response = await fetch(`${API_BASE_URL}/api/forms/request-training`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
