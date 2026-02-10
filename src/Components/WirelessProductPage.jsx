@@ -33,9 +33,9 @@ import abec3600L from '../assets/ProductsImg/Wireless/IO/ABEC-3600L.png';
 import awg3000 from '../assets/ProductsImg/Wireless/Controller/awg-3000.png';
 import awg5000 from '../assets/ProductsImg/Wireless/Controller/awg-5000.png';
 import awg7000 from '../assets/ProductsImg/Wireless/Controller/awg-7000.png';
-import awg9000 from '../assets/ProductsImg/Wireless/Controller/awg-9000.png';
-import awg9800 from '../assets/ProductsImg/Wireless/Controller/awg-9800.png';
-import awm8000 from '../assets/ProductsImg/Wireless/Controller/awm-8000.png';
+import awg9000 from '../assets/ProductsImg/Wireless/Controller/AWG-9000.png';
+import awg9800 from '../assets/ProductsImg/Wireless/Controller/AWG-9800.png';
+import awm8000 from '../assets/ProductsImg/Wireless/Controller/AWM-8000.png';
 
 const wirelessProducts = [
   {
