@@ -32,8 +32,9 @@ import WarrantyCheck from './pages/support/WarrantyCheckButton'
 import WhistleBlowerButton from './pages/About/WhistleBlowerButton'
 import ApplyNow from './pages/About/ApplyNow'
 import ProductDetails from './Components/WirelessProductDetails'
-import NetworkSwitches from './pages/active/NetworkSwitches' 
+import NetworkSwitches from './pages/active/NetworkSwitchesProductPage' 
 import Surveillance from './pages/active/Surveillance'
+import IndustrialRuggedSwitche from './pages/active/IndustrialRuggedSwitcheProductPage'
 
 
 const App = () => {
@@ -48,6 +49,7 @@ const App = () => {
           <Route path='wireless'element={<Wireless/>} />
           <Route path='networkSwitches' element={<NetworkSwitches/>}/> 
           <Route path='surveillance' element ={<Surveillance/>}/>
+          <Route path='industrial-rugged' element={<IndustrialRuggedSwitche/>}/>
           {/* Passive */}
           <Route path='passive'element={<Passive/>} />
           <Route  path='/blog' element={<Blog/>}/>
@@ -93,3 +95,4 @@ const App = () => {
 }
 
 export default App
+

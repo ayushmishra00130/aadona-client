@@ -1,305 +1,434 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import ProductCard from './ProductCard';
 import hero from '../assets/hero.jpg';
 
-// Indoor / Outdoor
-import asw1200 from '../assets/ProductsImg/Wireless/IO/asw-1200.png'
-import aix3000 from '../assets/ProductsImg/Wireless/IO/AIX-3000 .png'
-import aix62800T from '../assets/ProductsImg/Wireless/IO/AIX-6280-T.png'
-import aoxi1800 from '../assets/ProductsImg/Wireless/IO/AOXI-1700.png'
-import aoxe1800 from '../assets/ProductsImg/Wireless/IO/AOXE-1800.png'
-import asc1200LV2 from '../assets/ProductsImg/Wireless/IO/ASC-1200L V2.png'
-import axc1800 from '../assets/ProductsImg/Wireless/IO/AXC-1800..png'
-import axc1800L from '../assets/ProductsImg/Wireless/IO/AXC-1800L.png'
-import aos1200 from '../assets/ProductsImg/Wireless/IO/AOS-1200.png'
-import axc3000 from '../assets/ProductsImg/Wireless/IO/AXC-3000L.png'
-import axo1800L from '../assets/ProductsImg/Wireless/IO/AXO-1800L.png'
-import axc3600 from '../assets/ProductsImg/Wireless/IO/AXC-3600.png'
-import aoe1700t from '../assets/ProductsImg/Wireless/IO/aoe-1700-t.png'
-import aic1200 from '../assets/ProductsImg/Wireless/IO/aic-1200.png'
-
-// Controller
-import awg3000 from '../assets/ProductsImg/Wireless/Controller/awg-3000.png';
-import awg5000 from '../assets/ProductsImg/Wireless/Controller/awg-5000.png';
-import awg7000 from '../assets/ProductsImg/Wireless/Controller/awg-7000.png';
-import awg9000 from '../assets/ProductsImg/Wireless/Controller/awg-9000.png';
-import awg9800 from '../assets/ProductsImg/Wireless/Controller/awg-9800.png';
-import awm8000 from '../assets/ProductsImg/Wireless/Controller/awm-8000.png';
-
-const wirelessProducts = [
-  // Indoor Products
+const surveillanceProducts = [
+  // Indoor Cameras (Dome Cameras)
   {
     id: 1,
-    model: 'ASW-1200',
+    model: 'OFL-5VD-M',
     category: 'Indoor',
-    description: 'Indoor In-Wall Access Point.',
-    imageUrl: asw1200,
-    features: ['1200Mbps Dual Band', '11ac Wave2 2X2 MU-MIMO', 'Compact design, better connectivity'],
+    description: 'IP Vandal Dome Camera.',
+    imageUrl: hero,
+    features: ['5MP progressive scan ultra-low CMOS', 'IR distance 20 Meters Digital', 'Inbuilt Mic', 'Power Input: POE 48V / DC12V']
   },
   {
     id: 2,
-    model: 'ASC-1200L V2',
+    model: 'OFL-5TPE-A',
     category: 'Indoor',
-    description: 'Indoor Ceiling Mount Access Point.',
-    imageUrl: asc1200LV2,
-    features: ['1200Mbps Dual Band', '11ac Wave2 2X2 MU-MIMO', 'Extended range with budget'],
+    description: 'IP Dome Polaris Camera.',
+    imageUrl: hero,
+    features: ['5MP progressive scan ultra-low CMOS', 'IR distance 20 Meters Digital', 'Inbuilt Mic', 'Power Input: POE 48V / DC12V']
   },
   {
     id: 3,
-    model: 'AXW-3000',
+    model: 'OFL-5TPC-A',
     category: 'Indoor',
-    description: 'Indoor In-Wall / Wall Mount Access Point.',
+    description: 'IP Dome Polaris Camera.',
     imageUrl: hero,
-    features: ['3000Mbps Dual Band', 'Wi-Fi 6 2X2 MU-MIMO', 'High Performance'],
+    features: ['5MP progressive scan ultra-low CMOS', 'IR distance 20 Meters Digital', 'Inbuilt Mic', 'High Quality Classic ABS body']
   },
   {
     id: 4,
-    model: 'ASC-1200',
+    model: 'OFL-5TNE-A',
     category: 'Indoor',
-    description: 'Indoor Ceiling Mount Access Point.',
+    description: 'IP Dome Night Fighter Camera.',
     imageUrl: hero,
-    features: ['1200Mbps Dual Band', '11ac Wave2 2X2 MU-MIMO', 'High Performance'],
+    features: ['5MP progressive scan ultra-low CMOS', 'IR distance 20 Meters Digital', 'Inbuilt Mic', 'ABS body']
   },
   {
     id: 5,
-    model: 'AXC-3600',
+    model: 'OFL-5TNC-A',
     category: 'Indoor',
-    description: 'Indoor Ceiling Mount Access Point.',
-    imageUrl: axc3600,
-    features: ['3600Mbps Dual Band', 'Wi-Fi 6 4X4 MU-MIMO', 'High User Density'],
+    description: 'IP Dome Night Fighter Camera.',
+    imageUrl: hero,
+    features: ['5MP progressive scan ultra-low CMOS', 'IR distance 20 Meters Digital', 'Inbuilt Mic', 'High Quality Classic ABS body']
   },
+  // Outdoor Cameras (Bullet Cameras)
   {
     id: 6,
-    model: 'ABEC-3600L',
-    category: 'Indoor',
-    description: 'Indoor Ceiling Mount Access Point.',
+    model: 'OFL-5BPE-A/M',
+    category: 'Outdoor',
+    description: 'IP Bullet Polaris Camera.',
     imageUrl: hero,
-    features: ['3600Mbps Dual Band', 'Wi-Fi 7 4X4 MU-MIMO', 'High Traffic Throughput'],
+    features: ['5MP progressive scan ultra-low CMOS', 'IR distance 30 Meters Digital', 'Inbuilt Mic', 'Support ONVIF, H.264 / H.265 / H.265+', 'ABS / Metal (Options available)']
   },
   {
     id: 7,
-    model: 'AXC-7800',
-    category: 'Indoor',
-    description: 'Indoor Ceiling Mount Access Point.',
+    model: 'OFL-5BPC-A/M',
+    category: 'Outdoor',
+    description: 'IP Bullet Polaris Camera.',
     imageUrl: hero,
-    features: ['7800Mbps Dual Band', 'Wi-Fi 7 4X4 MU-MIMO', 'High User Density Throughput'],
+    features: ['5MP progressive scan ultra-low CMOS', 'IR distance 30 Meters Digital', 'Inbuilt Mic', 'Support ONVIF, H.264 / H.265 / H.265+', 'High Quality Classic ABS / Metal']
   },
   {
     id: 8,
-    model: 'AIC-1200',
-    category: 'Indoor',
-    description: 'Indoor Wall / Ceiling Mount Access Point.',
-    imageUrl: aic1200,
-    features: ['1200Mbps Dual Band', '11ac Wave2 2X2 MU-MIMO', 'Compact Design, Better Connectivity'],
+    model: 'OFL-5BNE-A/M',
+    category: 'Outdoor',
+    description: 'IP Bullet Night Fighter Camera.',
+    imageUrl: hero,
+    features: ['5MP progressive scan ultra-low CMOS', 'IR distance 30 Meters Digital', 'Inbuilt Mic', 'Support ONVIF, H.264 / H.265 / H.265+', 'ABS / Metal (Options available)']
   },
   {
     id: 9,
-    model: 'AIX-1700',
-    category: 'Indoor',
-    description: 'Indoor Wall / Ceiling Mount Access Point.',
+    model: 'OFL-5BNC-A/M',
+    category: 'Outdoor',
+    description: 'IP Bullet Night Fighter Camera.',
     imageUrl: hero,
-    features: ['1700Mbps Dual Band', 'Wi-Fi 6 2X2 MU-MIMO', 'High Performance'],
+    features: ['5MP progressive scan ultra-low CMOS', 'IR distance 30 Meters Digital', 'Inbuilt Mic', 'Support ONVIF, H.264 / H.265 / H.265+', 'High Quality Classic ABS / Metal']
   },
+  // Outdoor Cameras (PTZ Cameras)
   {
     id: 10,
-    model: 'AIX-3000',
-    category: 'Indoor',
-    description: 'Indoor Wall / Ceiling Mount Access Point.',
-    imageUrl: aix3000,
-    features: ['3000Mbps Dual Band', 'Wi-Fi 6 4X4 MU-MIMO', 'High Performance'],
+    model: 'OPTZ-36X-5MM',
+    category: 'Outdoor',
+    description: 'IP mini PTZ Camera.',
+    imageUrl: hero,
+    features: ['5MP progressive scan ultra-low CMOS', 'IR distance 150 Meters', 'Support ONVIF, H.264 / H.265 / H.265+', '36X Optical Zoom']
   },
   {
     id: 11,
-    model: 'AIX-6820-T',
-    category: 'Indoor',
-    description: 'Indoor Wall / Ceiling Mount Access Point.',
-    imageUrl: aix62800T,
-    features: ['7800Mbps Tri Band', 'Wi-Fi 6 4X4 MU-MIMO', 'High Performance'],
+    model: 'OPTZ-32X-5M',
+    category: 'Outdoor',
+    description: 'IP PTZ Camera.',
+    imageUrl: hero,
+    features: ['5MP progressive scan ultra-low CMOS', 'IR distance 150 Meters', 'Support ONVIF, H.264 / H.265 / H.265+', '32X Optical Zoom']
   },
-
-  // Outdoor Products
+  // NVR Products
   {
     id: 12,
-    model: 'AOS-1200',
-    category: 'Outdoor',
-    description: 'Outdoor Pole / Wall Mount Access Point.',
-    imageUrl: aos1200,
-    features: ['1200Mbps Dual Band', 'Wi-Fi 6 2X2 MU-MIMO With External Antenna', 'Extended Coverage'],
+    model: 'ONVR-10F-18',
+    category: 'NVR',
+    description: 'Network Video Recorder.',
+    imageUrl: hero,
+    features: ['10-channel input', 'Supports up to 5MP resolution', '1 SATA interfaces, up to 8TB HDD', 'Connectable to third-party network cameras']
   },
   {
     id: 13,
-    model: 'AXC-1800L',
-    category: 'Outdoor',
-    description: 'Outdoor Pole / Wall Mount Access Point.',
-    imageUrl: axc1800L,
-    features: ['1800Mbps Dual Band', 'Wi-Fi 6 2X2 MU-MIMO With External Antenna', 'High Performance'],
+    model: 'ONVR-16F-18',
+    category: 'NVR',
+    description: 'Network Video Recorder.',
+    imageUrl: hero,
+    features: ['16-channel input', 'Supports up to 5MP resolution', '1 SATA interfaces, up to 8TB HDD', 'Connectable to third-party network cameras']
   },
   {
     id: 14,
-    model: 'AXO-3000AOM',
-    category: 'Outdoor',
-    description: 'Outdoor Pole / Wall Mount Access Point.',
+    model: 'ONVR-36F-46',
+    category: 'NVR',
+    description: 'Network Video Recorder.',
     imageUrl: hero,
-    features: ['3000Mbps Dual Band', 'Wi-Fi 6 2X2 MU-MIMO With Internal Antenna', 'High Performance'],
+    features: ['36-channel input', 'Supports up to 5MP resolution', '4 SATA interfaces, up to 6TB HDD', 'Connectable to third-party network cameras']
   },
   {
     id: 15,
-    model: 'AXO-3000L',
-    category: 'Outdoor',
-    description: 'Outdoor Pole / Wall Mount Access Point.',
+    model: 'ONVR-64F-48',
+    category: 'NVR',
+    description: 'Network Video Recorder.',
     imageUrl: hero,
-    features: ['3000Mbps Dual Band', 'Wi-Fi 6 2X2 MU-MIMO With Internal Antenna', 'Compact Design, High Performance'],
+    features: ['64-channel input', 'Supports up to 5MP resolution', '4 SATA interfaces, up to 8TB HDD', 'Connectable to third-party network cameras']
   },
   {
     id: 16,
-    model: 'APT-9143',
-    category: 'Outdoor',
-    description: 'Outdoor Pole Mount CPE.',
+    model: 'ONVR-128F9-8-4K',
+    category: 'NVR',
+    description: 'Network Video Recorder.',
     imageUrl: hero,
-    features: ['900Mbps Single 5G Band', '11ac Wave2 With Internal Antenna', '14dBi Dual Polarized High Gain Antenna, Distance up to 4000m'],
+    features: ['128-channel input', 'Supports up to 4K resolution', '9 SATA interfaces, up to 8TB HDD', 'Connectable to third-party network cameras']
   },
+  // Surveillance POE Switches
   {
     id: 17,
-    model: 'AOE-1700-T',
-    category: 'Outdoor',
-    description: 'Outdoor Pole / Wall Mount Access Point.',
-    imageUrl: aoe1700t,
-    features: ['1700Mbps Tri Band', '11ac Wave2 2X2 MU-MIMO With External Antenna', '2 x GE Ports + 1 x SFP Fiber Port'],
+    model: 'OUS-4EP-2E',
+    category: 'Surveillance',
+    description: 'Surveillance POE Unmanaged Switch.',
+    imageUrl: hero,
+    features: ['4 X 10/100 POE, 2 X 10/100 UPLINK', 'UP TO 250 MTR', 'Total Poe budget 78 watt']
   },
   {
     id: 18,
-    model: 'AOXI-1800',
-    category: 'Outdoor',
-    description: 'Outdoor Pole / Wall Mount Access Point.',
-    imageUrl: aoxi1800,
-    features: ['1800Mbps Dual Band', 'Wi-Fi 6 2X2 MU-MIMO With Internal Antenna', '1 x GE Port + 1 x SFP Fiber Port'],
+    model: 'OUS-4GP-1G-2F',
+    category: 'Surveillance',
+    description: 'Surveillance POE Unmanaged Switch.',
+    imageUrl: hero,
+    features: ['4 X 10/100/1000 POE', '1 X 10/100/1000 UPLINK, 2 X 1G SFP', '802.3af/at standard, maximum 30w power output', 'Total Poe budget 120 watt']
   },
   {
     id: 19,
-    model: 'AOXE-1800',
-    category: 'Outdoor',
-    description: 'Outdoor Pole / Wall Mount Access Point.',
-    imageUrl: aoxe1800,
-    features: ['1800Mbps Dual Band', 'Wi-Fi 6 2X2 MU-MIMO With External Antenna', '1 x GE Port + 1 x SFP Fiber Port'],
+    model: 'OUS-8EP-2E',
+    category: 'Surveillance',
+    description: 'Surveillance POE Unmanaged Switch.',
+    imageUrl: hero,
+    features: ['8 X 10/100 POE, 2 X 10/100 UPLINK', 'UP TO 250 MTR', 'Total Poe budget 96 watt']
   },
-
-  // Controller Products
   {
     id: 20,
-    model: 'AWG-3000',
-    category: 'Controller',
-    description: 'SMB Wireless Unified Controller.',
-    imageUrl: awg3000,
-    features: ['Max 64 Access Points', 'AAA Hotspot, Multi WAN Load Balancing & Failover', '5 x GE RJ-45 Ports'],
+    model: 'OUS-8EP-2G',
+    category: 'Surveillance',
+    description: 'Surveillance POE Unmanaged Switch.',
+    imageUrl: hero,
+    features: ['8 X 10/100 POE', '2 X 10/100/1000 UPLINK', 'UP TO 250 MTR', 'Total Poe budget 96 watt']
   },
   {
     id: 21,
-    model: 'AWG-5000',
-    category: 'Controller',
-    description: 'SMB Wireless Unified Controller.',
-    imageUrl: awg5000,
-    features: ['Max 128 Access Points', 'AAA Hotspot, Multi WAN Load Balancing & Failover', '5 x GE RJ-45 Ports'],
+    model: 'OUS-8GP-2G-1F',
+    category: 'Surveillance',
+    description: 'Surveillance POE Unmanaged Switch.',
+    imageUrl: hero,
+    features: ['8 X 10/100/1000 POE', '2 X 10/100/1000 UPLINK, 1 X 1G SFP', '802.3af/at standard, maximum 30w power output', 'Total Poe budget 120 watt']
   },
   {
     id: 22,
-    model: 'AWG-7000',
-    category: 'Controller',
-    description: 'SMB Wireless Unified Controller.',
-    imageUrl: awg7000,
-    features: ['Max 512 Access Points', 'AAA Hotspot, Multi WAN Load Balancing & Failover', '5 x GE RJ-45 Ports'],
+    model: 'OUS-8GP-2G-2F',
+    category: 'Surveillance',
+    description: 'Surveillance POE Unmanaged Switch.',
+    imageUrl: hero,
+    features: ['8 X 10/100/1000 POE', '2 X 10/100/1000 UPLINK, 2 X 1G SFP', '802.3af/at standard, maximum 30w power output', 'Total Poe budget 150 watt']
   },
   {
     id: 23,
-    model: 'AWG-9000',
-    category: 'Controller',
-    description: 'SMB Wireless Unified Controller',
-    imageUrl: awg9000,
-    features: ['Max 1024 Access Points', 'AAA Hotspot,Multi WAN Load Balancing and Fail Over', '5 x 10/100/1000 Mbps RJ-45 Ports'],
+    model: 'OUS-16EP-2G-1F',
+    category: 'Surveillance',
+    description: 'Surveillance POE Unmanaged Switch.',
+    imageUrl: hero,
+    features: ['16 X 10/100 POE', '2 X 10/100/1000 UPLINK, 1 X 1G SFP', 'UP TO 250 MTR', 'Total Poe budget 400 watt']
   },
   {
     id: 24,
-    model: 'AWG-9800',
-    category: 'Controller',
-    description: 'SMB Wireless Unified Controller',
-    imageUrl: awg9800,
-    features: ['Max 3072 Access Points', 'AAA Hotspot,Multi WAN Load Balancing and Fail Over', '6 x 100/1000/2500 Mbps RJ-45 Ports and 2 x 10G SFP + Ports'],
+    model: 'OUS-16GP-2G-2F',
+    category: 'Surveillance',
+    description: 'Surveillance POE Unmanaged Switch.',
+    imageUrl: hero,
+    features: ['16 X 10/100/1000 POE', '2 X 10/100/1000 UPLINK, 2 X 1G SFP', '802.3af/at standard, maximum 30w power output', 'Total Poe budget 450 watt']
   },
   {
     id: 25,
-    model: 'AWM-6000-C',
-    category: 'Controller',
-    description: 'L3 Enterprise Wireless Controller',
-    imageUrl: awg3000,
-    features: ['Max 256 Access Points','High Availability,Load Balancing, Captive Portal', '24 x 10/100/1000 Base-T Ports, 24 x 10/100/1000 Base-T Ports and 2 x 10G SFP + Ports'],
+    model: 'OUS-24EP-2G-1F',
+    category: 'Surveillance',
+    description: 'Surveillance POE Unmanaged Switch.',
+    imageUrl: hero,
+    features: ['24 X 10/100 POE', '2 X 10/100/1000 UPLINK, 1 X 1G SFP', 'UP TO 250 MTR', 'Total Poe budget 400 watt']
   },
   {
     id: 26,
-    model: 'AWM-8000',
-    category: 'Controller',
-    description: 'L3 Enterprise Wireless Controller',
-    imageUrl: awm8000,
-    features: ['Max 2048 Access Points','High Availability,Load Balancing, Captive Portal', '16 x 10/100/1000 Base-T Combo(GE/SFP) Ports, 8 x10G SFP Ports and 4 x 10G SFP + Ports'],
+    model: 'OUS-24GP-2G-1F',
+    category: 'Surveillance',
+    description: 'Surveillance POE Unmanaged Switch.',
+    imageUrl: hero,
+    features: ['24 X 10/100/1000 POE', '2 X 10/100/1000 UPLINK, 1 X 1G SFP', '802.3af/at standard, maximum 30w power output', 'Total Poe budget 300 watt']
   },
-
+  {
+    id: 27,
+    model: 'OUS-24GP-2G-2F',
+    category: 'Surveillance',
+    description: 'Surveillance POE Unmanaged Switch.',
+    imageUrl: hero,
+    features: ['24 X 10/100/1000 POE', '2 X 10/100/1000 UPLINK, 2 X 1G SFP', '802.3af/at standard, maximum 30w power output', 'Total Poe budget 450 watt']
+  },
+  {
+    id: 28,
+    model: 'OMS-8GP-2F',
+    category: 'Surveillance',
+    description: 'Surveillance POE managed Switch.',
+    imageUrl: hero,
+    features: ['8 X 10/100/1000 POE 802.3af/at standard', '2 X 1G SFP UPLINK', 'Advance Layer-2 features', 'Total Poe budget 120 watt']
+  },
+  {
+    id: 29,
+    model: 'OMS-16GPP-4C',
+    category: 'Surveillance',
+    description: 'Surveillance POE managed Switch.',
+    imageUrl: hero,
+    features: ['16 X 10/100/1000 POE 802.3af/at standard', '4 X 1G Combo Ports (SFP/RJ-45) UPLINK', 'Advance Layer-2 features', 'Total Poe budget 250 watt']
+  },
+  {
+    id: 30,
+    model: 'OMS-24GPP-4C',
+    category: 'Surveillance',
+    description: 'Surveillance POE managed Switch.',
+    imageUrl: hero,
+    features: ['24 X 10/100/1000 POE 802.3af/at standard', '4 X 1G Combo Ports (SFP/RJ-45) UPLINK', 'Advance Layer-2 features', 'Total Poe budget 400 watt']
+  },
 ];
 
+const relatedProductsData = [
+  { id: 1, name: 'AWG-3000', imageUrl: hero },
+  { id: 2, name: 'AWG-5000', imageUrl: hero },
+  { id: 3, name: 'AWG-7000', imageUrl: hero },
+  { id: 4, name: 'AWG-9000', imageUrl: hero },
+  { id: 5, name: 'AWG-9800', imageUrl: hero },
+  { id: 6, name: 'AWM-6000-C', imageUrl: hero },
+  { id: 7, name: 'AWM-8000', imageUrl: hero },
+  { id: 8, name: 'DCLS-24GPP-4XF', imageUrl: hero },
+  { id: 9, name: 'DCLS-48GPP-4XF', imageUrl: hero },
+];
 
-const ProductCategoryPage = () => {
-  const [activeCategory, setActiveCategory] = useState('All');
+const RelatedProductsSection = () => {
+  const scrollRef = useRef(null);
 
-  const filteredProducts =
-    activeCategory === 'All'
-      ? wirelessProducts
-      : wirelessProducts.filter((product) => product.category === activeCategory);
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      const scrollAmount = 300;
+      scrollRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   return (
-    <>
-    <div className="min-h-screen mt-20 bg-gray-50">
-      {/* Header & Filters */}
-      <div className="bg-white py-12 shadow-md ">
-          {/* Added text-center here */}
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl font-extrabold text-gray-900 tracking-tight mb-4 border-b-4 border-green-500 inline-block pb-1">
-              Wireless Solutions
-            </h1>
-            {/* Added mx-auto here to center the p element because it has a max-width */}
-            <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-              Explore the APOLLO Series — high-performance access points and controllers for scalable, secure wireless infrastructure.
-                    </p>
-          </div>
-        </div>
-         {/* Filter Buttons */}
-          <div className="mt-8 flex flex-wrap gap-4 justify-center">
-            {['All', 'Indoor', 'Outdoor', 'Controller'].map((category) => (
-              <button
-                key={category}
-                onClick={() => setActiveCategory(category)}
-                className={`px-6 py-2 rounded-md font-medium transition ${
-                  activeCategory === category
-                    ? 'bg-green-600 text-white shadow-md'
-                    : 'bg-white text-green-600 border border-green-500 hover:bg-green-50'
-                }`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
+    <div className="w-full bg-white py-10 border-t mt-15 border-gray-100">
+      <div className="max-w-7xl mx-auto px-4 relative group">
+        <h1 className="text-2xl font-extrabold md:text-2xl text-green-700 mb-8 text-center">
+          Related Products
+        </h1>
 
-      {/* Product Grid */}
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        {/* <h2 className="text-3xl font-bold text-gray-900 mb-8">
-          Featured APOLLO Products
-        </h2> */}
-
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {filteredProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
+        <div
+          ref={scrollRef}
+          className="flex overflow-x-auto gap-4 pb-4 scrollbar-hide snap-x snap-mandatory items-end"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
+          {relatedProductsData.map((item) => (
+            <Link
+              key={item.id}
+              to={`/product/${item.id}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="min-w-[150px] md:min-w-[200px] flex-shrink-0 snap-start group/card cursor-pointer block no-underline"
+            >
+              <div className="relative p-2 flex flex-col items-center">
+                <img
+                  src={item.imageUrl}
+                  alt={item.name}
+                  className="w-full h-auto object-contain max-h-[100px]"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-white/90 py-1.5 text-center text-[10px] font-bold text-gray-500 opacity-0 group-hover/card:opacity-100 transition-opacity border-t border-gray-100 shadow-sm">
+                  Quick View
+                </div>
+              </div>
+              <h3 className="mt-3 text-center font-bold text-gray-700 text-[16px] uppercase tracking-tighter">
+                {item.name}
+              </h3>
+            </Link>
           ))}
         </div>
+
+        <button
+          onClick={() => scroll('left')}
+          className="absolute -left-2 top-[45%] bg-white/80 shadow rounded-full p-1 hidden md:block opacity-0 group-hover:opacity-100 transition-opacity z-20"
+        >
+          <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <button
+          onClick={() => scroll('right')}
+          className="absolute -right-2 top-[45%] bg-white/80 shadow rounded-full p-1 hidden md:block opacity-0 group-hover:opacity-100 transition-opacity z-20"
+        >
+          <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
       </div>
     </div>
-    </>
   );
 };
 
-export default ProductCategoryPage;
+const SurveillanceProductPage = () => {
+  const [activeCategory, setActiveCategory] = useState('Indoor');
+
+  const categoryContent = {
+    Indoor: {
+      title: "Indoor Surveillance Solutions",
+      para: "Our Indoor IP Dome cameras deliver high-quality surveillance with advanced features including 5MP resolution, night vision capabilities, and support for modern compression standards like H.265+."
+    },
+    Outdoor: {
+      title: "Outdoor Surveillance Solutions",
+      para: "The Outdoor series features rugged IP Bullet and PTZ cameras designed for harsh environments. With extended IR range up to 150 meters and powerful optical zoom, these cameras ensure comprehensive outdoor monitoring."
+    },
+    NVR: {
+      title: "Network Video Recorders",
+      para: "Our NVR lineup provides scalable recording solutions from 10 to 128 channels, supporting up to 4K resolution. These recorders are compatible with third-party network cameras and offer flexible storage options."
+    },
+    Surveillance: {
+      title: "Surveillance PoE Switches",
+      para: "Specialized PoE switches designed for surveillance systems, offering extended transmission distances up to 250 meters, high PoE budgets, and both managed and unmanaged options for flexible deployment."
+    }
+  };
+
+  const filteredProducts = surveillanceProducts.filter((product) => {
+    return product.category === activeCategory;
+  });
+
+  return (
+    <div className="min-h-screen mt-20 bg-gray-50 flex flex-col">
+      {/* Header */}
+      <div className="bg-white py-12 shadow-md">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <h1 className="text-5xl font-extrabold text-gray-900 tracking-tight mb-4 border-b-4 border-green-500 inline-block pb-1">
+            Surveillance Solutions
+          </h1>
+          <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+            Explore our comprehensive IP surveillance ecosystem — cameras, NVRs, and PoE infrastructure.
+          </p>
+        </div>
+      </div>
+
+      {/* Filters */}
+      <div className="max-w-7xl mx-auto px-4 mt-10 space-y-8 flex flex-col items-center">
+        <div className="flex flex-wrap justify-center gap-3">
+          {['Indoor', 'Outdoor', 'NVR', 'Surveillance'].map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setActiveCategory(cat)}
+              className={`px-8 py-2.5 rounded-lg font-semibold transition-all duration-300 ${
+                activeCategory === cat
+                  ? 'bg-green-600 text-white'
+                  : 'bg-white text-gray-600 border'
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
+        <div className="max-w-4xl w-full p-8 bg-white border-l-8 border-green-500 shadow-xl rounded-r-xl">
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">
+            {categoryContent[activeCategory].title}
+          </h2>
+          <p className="text-gray-600 italic leading-relaxed">
+            {categoryContent[activeCategory].para}
+          </p>
+        </div>
+      </div>
+
+      {/* Main Grid */}
+      <div className="max-w-7xl mx-auto py-12 px-4 flex-grow">
+        {filteredProducts.length > 0 ? (
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            {filteredProducts.map((product) => (
+              <Link
+                key={product.id}
+                to={`/product/${product.id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block no-underline hover:no-underline"
+              >
+                <ProductCard product={product} />
+              </Link>
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-24 bg-white rounded-3xl border border-dashed">
+            <h3 className="text-xl font-bold text-gray-900">No products found</h3>
+          </div>
+        )}
+      </div>
+
+      <RelatedProductsSection />
+    </div>
+  );
+};
+
+export default SurveillanceProductPage;
