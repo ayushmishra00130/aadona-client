@@ -32,9 +32,11 @@ import WarrantyCheck from './pages/support/WarrantyCheckButton'
 import WhistleBlowerButton from './pages/About/WhistleBlowerButton'
 import ApplyNow from './pages/About/ApplyNow'
 import ProductDetails from './Components/WirelessProductDetails'
-import NetworkSwitches from './pages/active/NetworkSwitchesProductPage' 
+import NetworkSwitches from './pages/active/NetworkSwitches' 
 import Surveillance from './pages/active/Surveillance'
-import IndustrialRuggedSwitche from './pages/active/IndustrialRuggedSwitcheProductPage'
+import IndustrialRuggedSwitche from './pages/active/IndustrialRuggedSwitche'
+import ServerWorkstation from './pages/active/ServerWorkstation'
+import Nas from './pages/active/Nas'
 
 
 const App = () => {
@@ -50,6 +52,10 @@ const App = () => {
           <Route path='networkSwitches' element={<NetworkSwitches/>}/> 
           <Route path='surveillance' element ={<Surveillance/>}/>
           <Route path='industrial-rugged' element={<IndustrialRuggedSwitche/>}/>
+          <Route path='industrial-rugged-switches' element={<IndustrialRuggedSwitche/>}/>
+          <Route path='nas' element={<Nas/>}/>
+          <Route path='servers-workstations' element={<ServerWorkstation/>}/>
+          <Route path='server-workstations' element={<ServerWorkstation/>}/>
           {/* Passive */}
           <Route path='passive'element={<Passive/>} />
           <Route  path='/blog' element={<Blog/>}/>
@@ -95,4 +101,3 @@ const App = () => {
 }
 
 export default App
-

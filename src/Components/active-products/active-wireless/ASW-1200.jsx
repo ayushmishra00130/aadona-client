@@ -36,7 +36,7 @@ const mockProduct = {
 // --- Icons Component (using lucide-react, assumed available) ---
 const FeatureIcon = ({ icon: Icon, text }) => (
     <li className="flex items-start space-x-3">
-        <Icon className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+        <Icon className="w-5 h-5 text-green-600 shrink-0 mt-1" />
         <span className="text-gray-700">{text}</span>
     </li>
 );

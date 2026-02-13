@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import ProductCard from '../../Components/ProductCard';
-import hero from '../../assets/hero.jpg';
+import ProductCard from './ProductCard';
+import hero from '../assets/hero.jpg';
 
 const networkSwitchProducts = [
   // Unmanaged Switches - Un Managed Non POE
@@ -365,7 +365,7 @@ const networkSwitchProducts = [
     features: ['48*10M/100M/1000M RJ45 port', '4*100M/1000Mbps SFP UPLINK', 'Robust and Reliable']
   },
 
-  // Layer 3 Switches
+  // Layer 3 Switches - Layer 3 Switches
   {
     id: 40,
     model: 'DCLS-8G-4XF',
@@ -982,6 +982,552 @@ const networkSwitchProducts = [
     imageUrl: hero,
     features: ['48*1000M/2.5G RJ45 port', '4*10G SFP+fiber port', 'Total PoE budget 1200 watt']
   },
+
+  // Accessories - Essential
+  {
+    id: 108,
+    model: 'DSM-20',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '1G SFP LX Single-mode 1310nm 20km Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['1G SFP LX', 'Single-mode 1310nm', '20km reach']
+  },
+  {
+    id: 109,
+    model: 'DSM-1GLR-10BIDI-3155',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '1Gb/s SFP BIDI 10Km Reach TX1310nm/ RX1550nm Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['1Gb/s SFP BIDI', 'TX1310nm/ RX1550nm', '10Km reach']
+  },
+  {
+    id: 110,
+    model: 'DSM-1GLR-10BIDI-5531',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '1Gb/s SFP BIDI 10Km Reach TX1550nm/ RX1310nm Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['1Gb/s SFP BIDI', 'TX1550nm/ RX1310nm', '10Km reach']
+  },
+  {
+    id: 111,
+    model: 'DSM-1GLR-40BIDI-3155',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '1Gb/s SFP BIDI 40Km Reach TX1310nm/ RX1550nm Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['1Gb/s SFP BIDI', 'TX1310nm/ RX1550nm', '40Km reach']
+  },
+  {
+    id: 112,
+    model: 'DSM-1GLR-40BIDI-5531',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '1Gb/s SFP BIDI 40Km Reach TX1550nm/ RX1310nm Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['1Gb/s SFP BIDI', 'TX1550nm/ RX1310nm', '40Km reach']
+  },
+  {
+    id: 113,
+    model: 'DSM-1GLR-80BIDI-4955',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '1Gbps SFP BIDI 80Km Reach TX1490nm / RX1550nm Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['1Gbps SFP BIDI', 'TX1490nm / RX1550nm', '80Km reach']
+  },
+  {
+    id: 114,
+    model: 'DSM-1GLR-80BIDI-5549',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '1Gbps SFP BIDI 80Km Reach TX1550nm / RX1490nm Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['1Gbps SFP BIDI', 'TX1550nm / RX1490nm', '80Km reach']
+  },
+  {
+    id: 115,
+    model: 'DSM-10GLR-10BIDI-2733',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '10Gbps SFP+ BIDI Transceiver, Single mode, 10Km Reach.',
+    imageUrl: hero,
+    features: ['10Gbps SFP+ BIDI', '1270nm TX / 1330nm RX', '10Km reach']
+  },
+  {
+    id: 116,
+    model: 'DSM-10GLR-10BIDI-3327',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '10Gbps SFP+ BIDI Transceiver, Single mode, 10Km Reach.',
+    imageUrl: hero,
+    features: ['10Gbps SFP+ BIDI', '1330nm TX / 1270nm RX', '10Km reach']
+  },
+  {
+    id: 117,
+    model: 'DSM-10GLR-20BIDI-2733',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '10Gbps SFP+ BIDI Transceiver, Single mode, 20Km Reach.',
+    imageUrl: hero,
+    features: ['10Gbps SFP+ BIDI', '1270nm TX / 1330nm RX', '20Km reach']
+  },
+  {
+    id: 118,
+    model: 'DSM-10GLR-20BIDI-3327',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '10Gbps SFP+ BIDI Transceiver, Single mode, 20Km Reach.',
+    imageUrl: hero,
+    features: ['10Gbps SFP+ BIDI', '1330nm TX / 1270nm RX', '20Km reach']
+  },
+  {
+    id: 119,
+    model: 'DSM-10GLR',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '10G SFP LX Single-mode 1310nm 10km Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['10G SFP LX', 'Single-mode 1310nm', '10km reach']
+  },
+  {
+    id: 120,
+    model: 'DSM-10GLR-2',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '10G SFP LX Single-mode 1310nm 20km Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['10G SFP LX', 'Single-mode 1310nm', '20km reach']
+  },
+  {
+    id: 121,
+    model: 'DCM-1G',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '1G BASE-T (RJ-45) Copper SFP Transceiver.',
+    imageUrl: hero,
+    features: ['1G BASE-T', 'RJ-45 Copper', 'Up to 100 meters']
+  },
+  {
+    id: 122,
+    model: 'DCM-10G',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '10G BASE-T (RJ-45) Copper SFP Transceiver.',
+    imageUrl: hero,
+    features: ['10G BASE-T', 'RJ-45 Copper', 'Up to 30 meters']
+  },
+  {
+    id: 123,
+    model: 'DCM-10G-80',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '10G BASE-T (RJ-45) Copper SFP Transceiver.',
+    imageUrl: hero,
+    features: ['10G BASE-T', 'RJ-45 Copper', 'Up to 80 meters']
+  },
+  {
+    id: 124,
+    model: 'DSM-40',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '1G SFP LX Single-mode 1310nm 40km Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['1G SFP LX', 'Single-mode 1310nm', '40km reach']
+  },
+  {
+    id: 125,
+    model: 'DSM-80',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '1G SFP LX Single-mode 1310nm 80km Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['1G SFP LX', 'Single-mode 1310nm', '80km reach']
+  },
+  {
+    id: 126,
+    model: 'DSM-120',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '1G SFP LX Single-mode 1310nm 120km Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['1G SFP LX', 'Single-mode 1310nm', '120km reach']
+  },
+  {
+    id: 127,
+    model: 'DSM-10GER-4',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '10G SFP LX Single-mode 1550nm 40km Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['10G SFP LX', 'Single-mode 1550nm', '40km reach']
+  },
+  {
+    id: 128,
+    model: 'DSM-10GZR-8',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '10G SFP LX Single-mode 1550nm 80km Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['10G SFP LX', 'Single-mode 1550nm', '80km reach']
+  },
+  {
+    id: 129,
+    model: 'DSM-25GLR',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '25G SFP LX Single-mode 1310nm 10km Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['25G SFP LX', 'Single-mode 1310nm', '10km reach']
+  },
+  {
+    id: 130,
+    model: 'DSM-40GLR-10',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '40G SFP LX Single-mode 10km Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['40G SFP LX', 'Single-mode', '10km reach']
+  },
+  {
+    id: 131,
+    model: 'DSM-40GER-40',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '40G SFP LX Single-mode 40km Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['40G SFP LX', 'Single-mode', '40km reach']
+  },
+  {
+    id: 132,
+    model: 'DSM-100GLR',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '100G QSFP28 LR4 Single-mode 10km Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['100G QSFP28 LR4', 'Single-mode', '10km reach']
+  },
+  {
+    id: 133,
+    model: 'DMM-1GSR',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '1G SFP LX multi-mode 850nm 550m Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['1G SFP LX', 'Multi-mode 850nm', '550m reach']
+  },
+  {
+    id: 134,
+    model: 'DMM-10GSR',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '10G SFP LX multi-mode 850nm 550m Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['10G SFP LX', 'Multi-mode 850nm', '550m reach']
+  },
+  {
+    id: 135,
+    model: 'DMM-25GSR',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '25G SFP LX multi-mode 850nm 100m Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['25G SFP LX', 'Multi-mode 850nm', '100m reach']
+  },
+  {
+    id: 136,
+    model: 'DMM-40GSR',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '40G SFP LX multi-mode 850nm 100m Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['40G SFP LX', 'Multi-mode 850nm', '100m reach']
+  },
+  {
+    id: 137,
+    model: 'DMM-100GSR',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '100G QSFP28 SR4 multi-mode 100m Optical Transceiver Module.',
+    imageUrl: hero,
+    features: ['100G QSFP28 SR4', 'Multi-mode', '100m reach']
+  },
+  {
+    id: 138,
+    model: 'DPI-90G',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: 'Single Port High performance 802.11BT Gigabit PoE injector 90W.',
+    imageUrl: hero,
+    features: ['802.11BT', 'Gigabit PoE', '90W output']
+  },
+  {
+    id: 139,
+    model: 'DDC-XF-1M-AL',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '10G SFP+ Direct Attach Passive Copper Cables.',
+    imageUrl: hero,
+    features: ['10G SFP+', 'Direct Attach', 'Passive Copper']
+  },
+  {
+    id: 140,
+    model: 'DDC-XF28-1M-AL',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '25G SFP28 Direct Attach Passive Copper Cables.',
+    imageUrl: hero,
+    features: ['25G SFP28', 'Direct Attach', 'Passive Copper']
+  },
+  {
+    id: 141,
+    model: 'DDC-QXF-1M-AL',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '40G QSFP+ Direct Attach Passive Copper Cables.',
+    imageUrl: hero,
+    features: ['40G QSFP+', 'Direct Attach', 'Passive Copper']
+  },
+  {
+    id: 142,
+    model: 'DDC-QXF28-1M-AL',
+    category: 'Accessories',
+    segment: 'Essential',
+    description: '100G QSFP28 Direct Attach Passive Copper Cables.',
+    imageUrl: hero,
+    features: ['100G QSFP28', 'Direct Attach', 'Passive Copper']
+  },
+
+  // Accessories - Media Convertors
+  {
+    id: 143,
+    model: 'SMCL-1G1S',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: 'Rugged Media Converter.',
+    imageUrl: hero,
+    features: ['1*10/100/1000Tx', '1*100/1000 SFP Slot', 'Rugged design']
+  },
+  {
+    id: 144,
+    model: 'SMCL-2G2F-SFP-E',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: 'Rugged Media Converter.',
+    imageUrl: hero,
+    features: ['2*10/100/1000Tx', '2*100/1000 SFP Slot', 'Rugged design']
+  },
+  {
+    id: 145,
+    model: 'OMC-1G1F-SFP',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: 'Gigabit SFP Fiber Media Converter.',
+    imageUrl: hero,
+    features: ['1*10/100/1000Tx', '1*100/1000 SFP Slot', 'Gigabit speed']
+  },
+  {
+    id: 146,
+    model: 'DMC-1G1F-BIDI-3155',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: 'Gigabit Single Fiber Media Converter with SC Fiber Port.',
+    imageUrl: hero,
+    features: ['1310nm / 1550nm', 'Single fiber bi-directional', 'SC Fiber Port']
+  },
+  {
+    id: 147,
+    model: 'DMC-1G1F-BIDI-5531',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: 'Gigabit Single Fiber Media Converter with SC Fiber Port.',
+    imageUrl: hero,
+    features: ['1550nm / 1310nm', 'Single fiber bi-directional', 'SC Fiber Port']
+  },
+  {
+    id: 148,
+    model: 'DMC-2G1F-SC-E',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: 'Gigabit SFP Fiber Media Converter.',
+    imageUrl: hero,
+    features: ['2*10/100/1000Tx', '1*100/1000 SC fiber port', 'Dual port']
+  },
+  {
+    id: 149,
+    model: 'DMC-2G1F-SFP-E',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: 'Gigabit SFP Fiber Media Converter.',
+    imageUrl: hero,
+    features: ['2*10/100/1000Tx', '1*100/1000 SFP Slot', 'Dual port']
+  },
+  {
+    id: 150,
+    model: 'DMC-1E1F-SM-20',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: 'Fast Ethernet Single Mode Dual Fiber Media Converter.',
+    imageUrl: hero,
+    features: ['1*10/100Tx', '1*100Fx SC Fiber Port', 'Single Mode']
+  },
+  {
+    id: 151,
+    model: 'DMC-1E1F-MM-20',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: 'Fast Ethernet Multi-Mode Dual Fiber Media Converter.',
+    imageUrl: hero,
+    features: ['1*10/100Tx', '1*100Fx SC Fiber Port', 'Multi-Mode']
+  },
+  {
+    id: 152,
+    model: 'DMC-1G1F-LC-20-E',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: 'Gigabit Single Mode Dual Fiber Media Converter.',
+    imageUrl: hero,
+    features: ['1*10/100/1000Tx', '1*100/1000 LC Fiber Port', 'Single Mode']
+  },
+  {
+    id: 153,
+    model: 'DMC-1G1F-SC-SM20-E',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: 'Gigabit Single Mode Dual Fiber Media Converter.',
+    imageUrl: hero,
+    features: ['1*10/100/1000Tx', '1*100/1000 SC Fiber Port', 'Single Mode']
+  },
+  {
+    id: 154,
+    model: 'DMC-1G1F-SC-MM2-E',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: 'Gigabit Multi Mode Dual Fiber Media Converter.',
+    imageUrl: hero,
+    features: ['1*10/100/1000Tx', '1*100/1000 SC Fiber Port', 'Multi Mode']
+  },
+  {
+    id: 155,
+    model: 'DMC-1G1F-SFP',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: 'Gigabit SFP Fiber Media Converter.',
+    imageUrl: hero,
+    features: ['1*10/100/1000Tx', '1*100/1000 SFP Slot', 'Gigabit speed']
+  },
+  {
+    id: 156,
+    model: 'DMC-2G2F-SFP-E',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: 'Gigabit SFP Fiber Media Converter.',
+    imageUrl: hero,
+    features: ['2*10/100/1000Tx', '2*100/1000 SFP Slot', 'Dual port']
+  },
+  {
+    id: 157,
+    model: 'DMC-1XG1XF-SFP-E',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: 'Gigabit SFP Fiber Media Converter.',
+    imageUrl: hero,
+    features: ['1*10GTx', '1*10G SFP Slot', '10G speed']
+  },
+  {
+    id: 158,
+    model: 'DMCH-214-AC',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: '2U 14-slot Rackmount Chassis Media Converter.',
+    imageUrl: hero,
+    features: ['14-slot Chassis', 'Centralized Management', '2U Rackmount']
+  },
+  {
+    id: 159,
+    model: 'DMCH-216-AC',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: '2U 16-slot Rackmount Chassis Media Converter.',
+    imageUrl: hero,
+    features: ['16-slot Chassis', 'Centralized Management', '2U Rackmount']
+  },
+  {
+    id: 160,
+    model: 'DMCC-1E1F-SM-SC (Card)',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: 'Fast Ethernet Single Mode Single Fiber Card-type Media Converter.',
+    imageUrl: hero,
+    features: ['1*10/100Tx', '1*100Fx SC Port', 'Card-type']
+  },
+  {
+    id: 161,
+    model: 'DMCC-1E1F-MM-SC (Card)',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: 'Fast Ethernet Multi-Mode Single Fiber Card-type Media Converter.',
+    imageUrl: hero,
+    features: ['1*10/100Tx', '1*100Fx SC Port', 'Card-type']
+  },
+  {
+    id: 162,
+    model: 'DMCC-1G1F-SM-SC (Card)',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: 'Gigabit Single Mode Single Fiber Card-type Media Converter.',
+    imageUrl: hero,
+    features: ['1*10/100/1000Tx', '1*100/1000 Fx SC Port', 'Card-type']
+  },
+  {
+    id: 163,
+    model: 'DMCC-1G1F-MM-SC (Card)',
+    category: 'Accessories',
+    segment: 'Media Convertors',
+    description: 'Gigabit Multi Mode Single Fiber Card-type Media Converter.',
+    imageUrl: hero,
+    features: ['1*10/100/1000Tx', '1*100/1000 Fx SC Port', 'Card-type']
+  },
+
+  // Accessories - Power Supply
+  {
+    id: 164,
+    model: 'EDR-75-48',
+    category: 'Accessories',
+    segment: 'Power Supply',
+    description: '75W Industrial DIN Rail Power Supply.',
+    imageUrl: hero,
+    features: ['75W', '48VDC', 'Universal AC input']
+  },
+  {
+    id: 165,
+    model: 'EDR-120-48',
+    category: 'Accessories',
+    segment: 'Power Supply',
+    description: '120W Industrial DIN Rail Power Supply.',
+    imageUrl: hero,
+    features: ['120W', '48VDC', 'Universal AC input']
+  },
+  {
+    id: 166,
+    model: 'NDR-240-48',
+    category: 'Accessories',
+    segment: 'Power Supply',
+    description: '240W Industrial DIN Rail Power Supply.',
+    imageUrl: hero,
+    features: ['240W', '48VDC', 'Universal AC input']
+  },
+  {
+    id: 167,
+    model: 'NDR-480-48',
+    category: 'Accessories',
+    segment: 'Power Supply',
+    description: '480W Industrial DIN Rail Power Supply.',
+    imageUrl: hero,
+    features: ['480W', '48VDC', 'Universal AC input']
+  },
 ];
 
 const relatedProductsData = [
@@ -1027,7 +1573,7 @@ const RelatedProductsSection = () => {
               to={`/product/${item.id}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="min-w-[150px] md:min-w-[200px] flex-shrink-0 snap-start group/card cursor-pointer block no-underline"
+              className="min-w-[150px] md:min-w-[200px] shrink-0 snap-start group/card cursor-pointer block no-underline"
             >
               <div className="relative p-2 flex flex-col items-center">
                 <img
@@ -1144,7 +1690,7 @@ const ProductCategoryPage = () => {
       </div>
 
       {/* Main Grid */}
-      <div className="max-w-7xl mx-auto py-12 px-4 flex-grow">
+      <div className="max-w-7xl mx-auto py-12 px-4 grow">
         {filteredProducts.length > 0 ? (
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
             {filteredProducts.map((product) => (

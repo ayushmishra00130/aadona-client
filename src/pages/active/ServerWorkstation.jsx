@@ -1,8 +1,16 @@
 import React from 'react'
+import Navbar from '../../Components/Navbar'
+import Footer from '../../Components/Footer'
+import ServerWorkstationsProductPage from '../../Components/ServerWorkstationsProductPage'
 
 const ServerWorkstation = () => {
   return (
-    <div>ServerWorkstation</div>
+    <>
+     <Navbar/>
+         <ServerWorkstationsProductPage/>
+     
+     <Footer/>
+    </>
   )
 }
 

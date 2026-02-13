@@ -318,7 +318,7 @@ const RelatedProductsSection = () => {
               to={`/product/${item.id}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="min-w-[150px] md:min-w-[200px] flex-shrink-0 snap-start group/card cursor-pointer block no-underline"
+              className="min-w-[150px] md:min-w-[200px] shrink-0 snap-start group/card cursor-pointer block no-underline"
             >
               <div className="relative p-2 flex flex-col items-center">
                 <img
@@ -437,7 +437,7 @@ const ProductCategoryPage = () => {
       </div>
 
       {/* Main Grid */}
-      <div className="max-w-7xl mx-auto py-12 px-4 flex-grow">
+      <div className="max-w-7xl mx-auto py-12 px-4 grow">
         {filteredProducts.length > 0 ? (
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
             {filteredProducts.map((product) => (
@@ -465,4 +465,3 @@ const ProductCategoryPage = () => {
 };
 
 export default ProductCategoryPage;
-

@@ -27,7 +27,7 @@ const App = () => {
             {certifications.map((certUrl, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 flex items-center justify-center w-40 h-28  p-2  transition-all duration-300  hover:shadow-xl hover:bg-white transform hover:scale-[1.05] cursor-default"
+                className="shrink-0 flex items-center justify-center w-40 h-28  p-2  transition-all duration-300  hover:shadow-xl hover:bg-white transform hover:scale-[1.05] cursor-default"
               >
                 <img
                   src={certUrl}

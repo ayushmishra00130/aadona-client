@@ -216,23 +216,23 @@ const ProductDetailPage = () => {
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-gray-700">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
                     <span>1200Mbps Dual Band (2.4GHz + 5GHz)</span>
                   </li>
                   <li className="flex items-start gap-2 text-gray-700">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
                     <span>11ac Wave2 2X2 MU-MIMO Technology</span>
                   </li>
                   <li className="flex items-start gap-2 text-gray-700">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
                     <span>Compact in-wall design for seamless integration</span>
                   </li>
                   <li className="flex items-start gap-2 text-gray-700">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
                     <span>PoE Powered (802.3af/at) for easy installation</span>
                   </li>
                   <li className="flex items-start gap-2 text-gray-700">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
                     <span>Enterprise-grade security and management</span>
                   </li>
                 </ul>

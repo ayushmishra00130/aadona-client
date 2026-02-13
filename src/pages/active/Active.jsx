@@ -83,13 +83,13 @@ const FilterOptions = () => {
                 />
 
                 {/* TEXT/CONTENT SECTION: Uniform bottom border */}
-                <div className={`p-6 flex flex-col flex-grow text-left border-b-4 ${theme.border} transition-colors duration-300`}>
+                <div className={`p-6 flex flex-col grow text-left border-b-4 ${theme.border} transition-colors duration-300`}>
                     
                     <h3 className={`text-xl font-semibold mb-2 ${theme.title} transition-colors duration-150`}>
                         {option.title}
                     </h3>
                     
-                    <p className="text-sm text-gray-600 mb-4 flex-grow">
+                    <p className="text-sm text-gray-600 mb-4 grow">
                         {option.description}
                     </p>
                     
@@ -116,7 +116,7 @@ const ActiveHome = () => {
   return (
     <div className="min-h-screen flex flex-col mt-20 bg-green-50"> 
       <Navbar/>
-      <main className="flex-grow">
+      <main className="grow">
         <FilterOptions /> 
       </main>
       <Footer/>

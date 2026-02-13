@@ -130,7 +130,7 @@ export default function Chatbot() {
             />
             <button
               onClick={handleSend}
-              className="bg-emerald-600 text-white px-4 py-2 rounded-full hover:bg-emerald-700 transition text-sm font-semibold flex items-center justify-center shadow-md flex-shrink-0"
+              className="bg-emerald-600 text-white px-4 py-2 rounded-full hover:bg-emerald-700 transition text-sm font-semibold flex items-center justify-center shadow-md shrink-0"
               aria-label="Send Message"
             >
               Send
