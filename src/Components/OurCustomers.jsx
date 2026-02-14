@@ -2,23 +2,19 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom"; // For smooth navigation
 import arrowIcon from "../assets/arrow.png"; // Your downloaded arrow icon
 
-// Helper: dynamically import all logos (already returned as urls when using `as: 'url'`)
-const importAll = (modules) => Object.values(modules);
+// Helper: dynamically import all logos
+const importAll = (modules) => Object.values(modules).map((mod) => mod.default);
 
-// Load all logos dynamically and include common image extensions recursively
-const governmentLogos = importAll(
-  import.meta.glob(
-    "../assets/Companies/Government/**/*.{png,jpg,jpeg,avif,svg,webp}",
-    { eager: true, as: "url" }
-  )
-);
+// Load all logos dynamically
+const governmentLogos = [
+  ...importAll(import.meta.glob("../assets/Companies/Government/famous/*.png", { eager: true })),
+  ...importAll(import.meta.glob("../assets/Companies/Government/less_famous/*.png", { eager: true })),
+];
 
-const privateLogos = importAll(
-  import.meta.glob(
-    "../assets/Companies/Private/**/*.{png,jpg,jpeg,avif,svg,webp}",
-    { eager: true, as: "url" }
-  )
-);
+const privateLogos = [
+  ...importAll(import.meta.glob("../assets/Companies/Private/famous/*.png", { eager: true })),
+  ...importAll(import.meta.glob("../assets/Companies/Private/less_famous/*.png", { eager: true })),
+];
 
 const OurCustomers = () => {
   const navigate = useNavigate(); // Hook to handle the "Back" button history correctly
