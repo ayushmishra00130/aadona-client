@@ -374,7 +374,7 @@ const SurveillanceProductPage = () => {
       {/* Filters */}
       <div className="max-w-7xl mx-auto px-4 mt-10 space-y-8 flex flex-col items-center">
         <div className="flex flex-wrap justify-center gap-3">
-          {['Indoor', 'Outdoor', 'NVR', 'Surveillance'].map((cat) => (
+          {['Indoor', 'Outdoor', 'NVR', 'Surveillance PoE Switches'].map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
