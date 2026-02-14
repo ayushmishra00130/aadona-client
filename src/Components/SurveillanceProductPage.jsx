@@ -140,7 +140,7 @@ const surveillanceProducts = [
   {
     id: 17,
     model: 'OUS-4EP-2E',
-    category: 'Surveillance',
+    category: 'Surveillance PoE Switches',
     description: 'Surveillance POE Unmanaged Switch.',
     imageUrl: hero,
     features: ['4 X 10/100 POE, 2 X 10/100 UPLINK', 'UP TO 250 MTR', 'Total Poe budget 78 watt']
@@ -148,7 +148,7 @@ const surveillanceProducts = [
   {
     id: 18,
     model: 'OUS-4GP-1G-2F',
-    category: 'Surveillance',
+    category: 'Surveillance PoE Switches',
     description: 'Surveillance POE Unmanaged Switch.',
     imageUrl: hero,
     features: ['4 X 10/100/1000 POE', '1 X 10/100/1000 UPLINK, 2 X 1G SFP', '802.3af/at standard, maximum 30w power output', 'Total Poe budget 120 watt']
@@ -156,7 +156,7 @@ const surveillanceProducts = [
   {
     id: 19,
     model: 'OUS-8EP-2E',
-    category: 'Surveillance',
+    category: 'Surveillance PoE Switches',
     description: 'Surveillance POE Unmanaged Switch.',
     imageUrl: hero,
     features: ['8 X 10/100 POE, 2 X 10/100 UPLINK', 'UP TO 250 MTR', 'Total Poe budget 96 watt']
@@ -164,7 +164,7 @@ const surveillanceProducts = [
   {
     id: 20,
     model: 'OUS-8EP-2G',
-    category: 'Surveillance',
+    category: 'Surveillance PoE Switches',
     description: 'Surveillance POE Unmanaged Switch.',
     imageUrl: hero,
     features: ['8 X 10/100 POE', '2 X 10/100/1000 UPLINK', 'UP TO 250 MTR', 'Total Poe budget 96 watt']
@@ -172,7 +172,7 @@ const surveillanceProducts = [
   {
     id: 21,
     model: 'OUS-8GP-2G-1F',
-    category: 'Surveillance',
+    category: 'Surveillance PoE Switches',
     description: 'Surveillance POE Unmanaged Switch.',
     imageUrl: hero,
     features: ['8 X 10/100/1000 POE', '2 X 10/100/1000 UPLINK, 1 X 1G SFP', '802.3af/at standard, maximum 30w power output', 'Total Poe budget 120 watt']
@@ -180,7 +180,7 @@ const surveillanceProducts = [
   {
     id: 22,
     model: 'OUS-8GP-2G-2F',
-    category: 'Surveillance',
+    category: 'Surveillance PoE Switches',
     description: 'Surveillance POE Unmanaged Switch.',
     imageUrl: hero,
     features: ['8 X 10/100/1000 POE', '2 X 10/100/1000 UPLINK, 2 X 1G SFP', '802.3af/at standard, maximum 30w power output', 'Total Poe budget 150 watt']
@@ -188,7 +188,7 @@ const surveillanceProducts = [
   {
     id: 23,
     model: 'OUS-16EP-2G-1F',
-    category: 'Surveillance',
+    category: 'Surveillance PoE Switches',
     description: 'Surveillance POE Unmanaged Switch.',
     imageUrl: hero,
     features: ['16 X 10/100 POE', '2 X 10/100/1000 UPLINK, 1 X 1G SFP', 'UP TO 250 MTR', 'Total Poe budget 400 watt']
@@ -196,7 +196,7 @@ const surveillanceProducts = [
   {
     id: 24,
     model: 'OUS-16GP-2G-2F',
-    category: 'Surveillance',
+    category: 'Surveillance PoE Switches',
     description: 'Surveillance POE Unmanaged Switch.',
     imageUrl: hero,
     features: ['16 X 10/100/1000 POE', '2 X 10/100/1000 UPLINK, 2 X 1G SFP', '802.3af/at standard, maximum 30w power output', 'Total Poe budget 450 watt']
@@ -204,7 +204,7 @@ const surveillanceProducts = [
   {
     id: 25,
     model: 'OUS-24EP-2G-1F',
-    category: 'Surveillance',
+    category: 'Surveillance PoE Switches',
     description: 'Surveillance POE Unmanaged Switch.',
     imageUrl: hero,
     features: ['24 X 10/100 POE', '2 X 10/100/1000 UPLINK, 1 X 1G SFP', 'UP TO 250 MTR', 'Total Poe budget 400 watt']
@@ -212,7 +212,7 @@ const surveillanceProducts = [
   {
     id: 26,
     model: 'OUS-24GP-2G-1F',
-    category: 'Surveillance',
+    category: 'Surveillance PoE Switches',
     description: 'Surveillance POE Unmanaged Switch.',
     imageUrl: hero,
     features: ['24 X 10/100/1000 POE', '2 X 10/100/1000 UPLINK, 1 X 1G SFP', '802.3af/at standard, maximum 30w power output', 'Total Poe budget 300 watt']
@@ -220,7 +220,7 @@ const surveillanceProducts = [
   {
     id: 27,
     model: 'OUS-24GP-2G-2F',
-    category: 'Surveillance',
+    category: 'Surveillance PoE Switches',
     description: 'Surveillance POE Unmanaged Switch.',
     imageUrl: hero,
     features: ['24 X 10/100/1000 POE', '2 X 10/100/1000 UPLINK, 2 X 1G SFP', '802.3af/at standard, maximum 30w power output', 'Total Poe budget 450 watt']
@@ -228,7 +228,7 @@ const surveillanceProducts = [
   {
     id: 28,
     model: 'OMS-8GP-2F',
-    category: 'Surveillance',
+    category: 'Surveillance PoE Switches',
     description: 'Surveillance POE managed Switch.',
     imageUrl: hero,
     features: ['8 X 10/100/1000 POE 802.3af/at standard', '2 X 1G SFP UPLINK', 'Advance Layer-2 features', 'Total Poe budget 120 watt']
@@ -236,7 +236,7 @@ const surveillanceProducts = [
   {
     id: 29,
     model: 'OMS-16GPP-4C',
-    category: 'Surveillance',
+    category: 'Surveillance PoE Switches',
     description: 'Surveillance POE managed Switch.',
     imageUrl: hero,
     features: ['16 X 10/100/1000 POE 802.3af/at standard', '4 X 1G Combo Ports (SFP/RJ-45) UPLINK', 'Advance Layer-2 features', 'Total Poe budget 250 watt']
@@ -244,7 +244,7 @@ const surveillanceProducts = [
   {
     id: 30,
     model: 'OMS-24GPP-4C',
-    category: 'Surveillance',
+    category: 'Surveillance PoE Switches',
     description: 'Surveillance POE managed Switch.',
     imageUrl: hero,
     features: ['24 X 10/100/1000 POE 802.3af/at standard', '4 X 1G Combo Ports (SFP/RJ-45) UPLINK', 'Advance Layer-2 features', 'Total Poe budget 400 watt']
