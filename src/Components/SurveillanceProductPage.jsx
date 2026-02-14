@@ -252,15 +252,11 @@ const surveillanceProducts = [
 ];
 
 const relatedProductsData = [
-  { id: 1, name: 'AWG-3000', imageUrl: hero },
-  { id: 2, name: 'AWG-5000', imageUrl: hero },
-  { id: 3, name: 'AWG-7000', imageUrl: hero },
-  { id: 4, name: 'AWG-9000', imageUrl: hero },
-  { id: 5, name: 'AWG-9800', imageUrl: hero },
-  { id: 6, name: 'AWM-6000-C', imageUrl: hero },
-  { id: 7, name: 'AWM-8000', imageUrl: hero },
-  { id: 8, name: 'DCLS-24GPP-4XF', imageUrl: hero },
-  { id: 9, name: 'DCLS-48GPP-4XF', imageUrl: hero },
+  { id: 1, name: 'DIANA:DSMS-48G-4XF', imageUrl: hero },
+  { id: 2, name: 'DIANA:DSMS-24G-4XF', imageUrl: hero },
+  { id: 3, name: 'DIANA:DSMS-8G-2F', imageUrl: hero },
+  { id: 4, name: 'DIANA:DSMS-24G-2G2F', imageUrl: hero },
+  
 ];
 
 const RelatedProductsSection = () => {
@@ -285,7 +281,7 @@ const RelatedProductsSection = () => {
 
         <div
           ref={scrollRef}
-          className="flex overflow-x-auto gap-4 pb-4 scrollbar-hide snap-x snap-mandatory items-end"
+          className="flex overflow-x-auto gap-4 pb-4 scrollbar-hide snap-x snap-mandatory items-center"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {relatedProductsData.map((item) => (

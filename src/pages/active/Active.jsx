@@ -15,7 +15,7 @@ import networkstorage from '../../assets/networkstorage.png'
 const FilterOptions = () => {
   const options = [
     { title: "Network Switches", description: "Reliable and scalable switching solutions for SMB to Enterprise networks.", link: "/networkSwitches", imageSrc: networkswitch },
-    { title: "Industrial & Rugged Switches", description: "Durable, high-performance switches built for critical industrial environments.", link: "/industrial-rugged", imageSrc: ruggedswitches },
+    { title: "Industrial Switches", description: "Durable, high-performance switches built for critical industrial environments.", link: "/industrial-rugged", imageSrc: ruggedswitches },
     { title: "Wireless Solutions", description: "Secure and fast wireless networking for enterprises and smart cities.", link: "/wireless", imageSrc: wireless },
     { title: "Server and Workstations", description: "Find powerful servers, racks, and high-performance computing workstations.", link: "/servers-workstations", imageSrc: serverworkstation },
     { title: "Network Attached Storage", description: "Secure and centralize your data with high-capacity NAS devices.", link: "/nas", imageSrc: networkstorage },

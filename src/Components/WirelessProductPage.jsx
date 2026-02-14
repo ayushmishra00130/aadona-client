@@ -88,7 +88,7 @@ const wirelessProducts = [
     id: 6,
     model: 'ABEC-3600L',
     category: 'Indoor',
-    segment: 'Enterprise',
+    segment: 'Business',
     description: 'Indoor Ceiling Mount Access Point.',
     imageUrl: abec3600L,
     features: ['3600Mbps Dual Band', 'Wi-Fi 7 4X4 MU-MIMO', 'High Traffic Throughput']
@@ -285,6 +285,10 @@ const relatedProductsData = [
   { id: 7, name: 'DCLS-48GPP-4XF', imageUrl: hero },
   { id: 8, name: 'DCLS-48G-4XF-2S-R', imageUrl: hero },
   { id: 9, name: 'DCLS-24GPP25-6XF-R', imageUrl: hero },
+  { id: 10,name: 'DCLS-48G-4XF-2S', imageUrl: hero },
+  { id: 11,name: 'DCLS-48G-4XF-R', imageUrl: hero },
+  { id: 12,name: 'DCLS-48G-4XF', imageUrl: hero },
+  { id: 13,name: 'DCLS-24GPP25-6XF', imageUrl: hero },
 ];
 
 const RelatedProductsSection = () => {

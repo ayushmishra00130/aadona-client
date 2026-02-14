@@ -365,111 +365,111 @@ const networkSwitchProducts = [
     features: ['48*10M/100M/1000M RJ45 port', '4*100M/1000Mbps SFP UPLINK', 'Robust and Reliable']
   },
 
-  // Layer 3 Switches - Layer 3 Switches
+  // Layer 3 Switches - Managed Non PoE
   {
     id: 40,
     model: 'DCLS-8G-4XF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['8*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Robust and Reliable']
+    features: ['8*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Robust and Reliable', 'High performance']
   },
   {
     id: 41,
     model: 'DCLS-8G-4XF-R',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['8*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant power supply']
+    features: ['8*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant power supply', 'High performance']
   },
   {
     id: 42,
     model: 'DCLS-24G-4XF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'High performance']
+    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Robust and Reliable', 'High performance']
   },
   {
     id: 43,
     model: 'DCLS-24G-4XF-R',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant Power supply']
+    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant Power supply', 'High performance']
   },
   {
     id: 44,
     model: 'DCLS-24G-4XF-2S',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', '2* 10G Stacking ports']
+    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', '2* 10G Stacking ports', 'Switch Stacking']
   },
   {
     id: 45,
     model: 'DCLS-24G-4XF-2S-R',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant Power Supply']
+    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant Power Supply', 'Switch Stacking']
   },
   {
     id: 46,
     model: 'DCLS-24G-4XF-R-MPF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant Modular Power supply and FAN']
+    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant Modular PSU & FAN', 'High performance']
   },
   {
     id: 47,
     model: 'DCLS-24G-4XF-2S-R-MPF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant modular Power Supply and FAN']
+    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant modular PSU & FAN', 'Switch Stacking']
   },
   {
     id: 48,
     model: 'DCLS-24G25-4XF-2S',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M/2.5G RJ45 port', '4*10G SFP UPLINK', 'Switch Stacking']
+    features: ['24*10M/100M/1000M/2.5G RJ45 port', '4*10G SFP UPLINK', '2* 10G Stacking ports', 'High performance']
   },
   {
     id: 49,
     model: 'DCLS-24G25-4XF-2S-R',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M/2.5G RJ45 port', '4*10G SFP UPLINK', 'Redundant Power Supply']
+    features: ['24*10M/100M/1000M/2.5G RJ45 port', '4*10G SFP UPLINK', 'Redundant Power Supply', 'Switch Stacking']
   },
   {
     id: 50,
     model: 'DCLS-24G25-4XF-2S-R-MPF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M/2.5G RJ45 port', '4*10G SFP UPLINK', 'Redundant Modular Power Supply and FAN']
+    features: ['24*10M/100M/1000M/2.5G RJ45 port', '4*10G SFP UPLINK', 'Redundant Modular PSU & FAN', 'Switch Stacking']
   },
   {
     id: 51,
     model: 'DCLS-12XF-R',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
     features: ['12*1G/10G SFP Ports', 'Robust and High performance', 'Redundant Power supply']
@@ -478,7 +478,7 @@ const networkSwitchProducts = [
     id: 52,
     model: 'DCLS-12XF-R-DC',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
     features: ['12*1G/10G SFP Ports', 'Robust and High performance', 'Redundant DC Power input']
@@ -487,280 +487,282 @@ const networkSwitchProducts = [
     id: 53,
     model: 'DCLS-12XF-R-MPF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['12*1G/10G SFP Ports', 'Robust and High performance', 'Redundant Modular Power supply']
+    features: ['12*1G/10G SFP Ports', 'Robust and High performance', 'Redundant Modular PSU']
   },
   {
     id: 54,
     model: 'DCLS-16F-8C-4XF-R',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['16*100M/1G SFP', '8*1G Combo (RJ-45 and SFP)', '4*10G SFP UPLINK']
+    features: ['16*100M/1G SFP', '8*1G Combo (RJ45 & SFP)', '4*10G SFP UPLINK', 'Redundant PSU']
   },
   {
     id: 55,
     model: 'DCLS-16F-8C-4XF-R-MPF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['16*100M/1G SFP', '8*1G Combo (RJ-45 and SFP)', 'Redundant modular Power supply']
+    features: ['16*100M/1G SFP', '8*1G Combo (RJ45 & SFP)', '4*10G SFP UPLINK', 'Redundant modular PSU']
   },
   {
     id: 56,
     model: 'DCLS-48G-4XF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'High performance']
+    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Robust and Reliable', 'High performance']
   },
   {
     id: 57,
     model: 'DCLS-48G-4XF-R',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant Power supply']
+    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant Power supply', 'High performance']
   },
   {
     id: 58,
     model: 'DCLS-48G-4XF-2S',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Switch Stacking']
+    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', '2* 10G Stacking ports', 'Switch Stacking']
   },
   {
     id: 59,
     model: 'DCLS-48G-4XF-2S-R',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant Power Supply']
+    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant Power Supply', 'Switch Stacking']
   },
   {
     id: 60,
     model: 'DCLS-48G-4XF-R-MPF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant Modular Power supply and FAN']
+    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant Modular PSU & FAN', 'High performance']
   },
   {
     id: 61,
     model: 'DCLS-48G-4XF-2S-R-MPF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed Non PoE',
     description: 'Layer 3 Managed Non PoE Access Switch.',
     imageUrl: hero,
-    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant modular Power Supply and FAN']
+    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant modular PSU & FAN', 'Switch Stacking']
   },
+
+  // Layer 3 Switches - Managed PoE
   {
     id: 62,
     model: 'DCLS-8GP-4XF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['8*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 150 watt']
+    features: ['8*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 150W', 'Robust and Reliable']
   },
   {
     id: 63,
     model: 'DCLS-8GP-4XF-R',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['8*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 300 watt']
+    features: ['8*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 300W', 'Redundant power supply']
   },
   {
     id: 64,
     model: 'DCLS-24GPP-4XF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 400 watt']
+    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 400W', 'Robust and Reliable']
   },
   {
     id: 65,
     model: 'DCLS-24GPP-4XF-R',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 800 watt']
+    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 800W', 'Redundant Power supply']
   },
   {
     id: 66,
     model: 'DCLS-24GPP-4XF-2S',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 400 watt']
+    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 400W', 'Switch Stacking']
   },
   {
     id: 67,
     model: 'DCLS-24GPP-4XF-2S-R',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 800 watt']
+    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant Power Supply', 'Total PoE budget 800W']
   },
   {
     id: 68,
     model: 'DCLS-24GP-4XF-R-MPF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 800 watt']
+    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 800W', 'Redundant Modular PSU & FAN']
   },
   {
     id: 69,
     model: 'DCLS-24GPP-4XF-R-MPF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 960 watt']
+    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant modular PSU & FAN', 'Total PoE budget 960W']
   },
   {
     id: 70,
     model: 'DCLS-24GP-4XF-2S-R-MPF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 800 watt']
+    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant modular PSU & FAN', 'Total PoE budget 800W']
   },
   {
     id: 71,
     model: 'DCLS-24GPP-4XF-2S-R-MPF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 960 watt']
+    features: ['24*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant modular PSU & FAN', 'Total PoE budget 960W']
   },
   {
     id: 72,
     model: 'DCLS-24GPP25-4XF-2S',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M/2.5G RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 400 watt']
+    features: ['24*10M/100M/1000M/2.5G RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 400W', 'Switch Stacking']
   },
   {
     id: 73,
     model: 'DCLS-24GPP25-4XF-2S-R',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M/2.5G RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 800 watt']
+    features: ['24*10M/100M/1000M/2.5G RJ45 port', '4*10G SFP UPLINK', 'Redundant Power Supply', 'Total PoE budget 800W']
   },
   {
     id: 74,
     model: 'DCLS-24GP25-4XF-2S-R-MPF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M/2.5G RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 800 watt']
+    features: ['24*10M/100M/1000M/2.5G RJ45 port', '4*10G SFP UPLINK', 'Redundant modular PSU & FAN', 'Total PoE budget 800W']
   },
   {
     id: 75,
     model: 'DCLS-24GPP25-4XF-2S-R-MPF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['24*10M/100M/1000M/2.5G RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 960 watt']
+    features: ['24*10M/100M/1000M/2.5G RJ45 port', '4*10G SFP UPLINK', 'Redundant modular PSU & FAN', 'Total PoE budget 960W']
   },
   {
     id: 76,
     model: 'DCLS-48GPP-4XF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 800 watt']
+    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 800W', 'Robust and Reliable']
   },
   {
     id: 77,
     model: 'DCLS-48GPP-4XF-R',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 1600 watt']
+    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 1600W', 'Redundant Power supply']
   },
   {
     id: 78,
     model: 'DCLS-48GPP-4XF-2S',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 800 watt']
+    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 800W', 'Switch Stacking']
   },
   {
     id: 79,
     model: 'DCLS-48GPP-4XF-2S-R',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 1600 watt']
+    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant Power Supply', 'Total PoE budget 1600W']
   },
   {
     id: 80,
     model: 'DCLS-48GP-4XF-R-MPF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 1600 watt']
+    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 1600W', 'Redundant Modular PSU & FAN']
   },
   {
     id: 81,
     model: 'DCLS-48GPP-4XF-R-MPF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 1720 watt']
+    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant modular PSU & FAN', 'Total PoE budget 1720W']
   },
   {
     id: 82,
     model: 'DCLS-48GP-4XF-2S-R-MPF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 1600 watt']
+    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant modular PSU & FAN', 'Total PoE budget 1600W']
   },
   {
     id: 83,
     model: 'DCLS-48GPP-4XF-2S-R-MPF',
     category: 'Layer 3 Switches',
-    segment: 'Layer 3 Switches',
+    segment: 'Managed PoE',
     description: 'Layer 3 Managed PoE Access Switch.',
     imageUrl: hero,
-    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Total PoE budget 1720 watt']
+    features: ['48*10M/100M/1000M RJ45 port', '4*10G SFP UPLINK', 'Redundant modular PSU & FAN', 'Total PoE budget 1720W']
   },
 
   // Core Switches - Non POE Switches
@@ -1531,15 +1533,11 @@ const networkSwitchProducts = [
 ];
 
 const relatedProductsData = [
-  { id: 1, name: 'ASW-1200', imageUrl: hero },
-  { id: 2, name: 'AXW-3000', imageUrl: hero },
-  { id: 3, name: 'ASC-1200L V2', imageUrl: hero },
-  { id: 4, name: 'AXC-3600', imageUrl: hero },
-  { id: 5, name: 'AOS-1200', imageUrl: hero },
-  { id: 6, name: 'AXO-1800L', imageUrl: hero },
-  { id: 7, name: 'AWG-3000', imageUrl: hero },
-  { id: 8, name: 'AWG-5000', imageUrl: hero },
-  { id: 9, name: 'AWG-7000', imageUrl: hero },
+  { id: 1, name: 'AWG-9000', imageUrl: hero },
+  { id: 2, name: 'AWG-3000', imageUrl: hero },
+  { id: 3, name: 'AWG-5000', imageUrl: hero },
+  { id: 4, name: 'AWG-7000', imageUrl: hero },
+  { id: 5, name: 'AWG-9800', imageUrl: hero },
 ];
 
 const RelatedProductsSection = () => {
@@ -1623,7 +1621,7 @@ const ProductCategoryPage = () => {
     'Unmanaged Switches': ['Un Managed Non POE'],
     'Web Smart Switches': ['Web Smart POE', 'Web Smart Non POE'],
     'Fully Managed Switches': ['Managed POE', 'Managed Non POE'],
-    'Layer 3 Switches': ['Layer 3 Switches'],
+    'Layer 3 Switches': ['Managed PoE', 'Managed Non PoE'],
     'Core Switches': ['POE Switches', 'Non POE Switches'],
     'Accessories': ['Essential', 'Media Convertors', 'Power Supply']
   };
@@ -1671,15 +1669,15 @@ const ProductCategoryPage = () => {
         </div>
 
         {categorySegments[activeCategory].length > 1 && (
-          <div className="flex items-center gap-2 bg-gray-200/60 p-1.5 rounded-full border border-gray-300">
+          <div className="flex items-center gap-4">
             {categorySegments[activeCategory].map((seg) => (
               <button
                 key={seg}
                 onClick={() => setActiveSegment(seg)}
-                className={`px-10 py-2 rounded-full text-sm font-bold transition-all duration-300 ${
+                className={`px-10 py-3 rounded-lg text-base font-semibold transition-all duration-300 border-2 ${
                   activeSegment === seg
-                    ? 'bg-white text-green-700 shadow-md'
-                    : 'text-gray-500'
+                    ? 'bg-green-600 text-white border-green-600 shadow-md'
+                    : 'bg-white text-gray-600 border-gray-300 hover:border-gray-400'
                 }`}
               >
                 {seg}

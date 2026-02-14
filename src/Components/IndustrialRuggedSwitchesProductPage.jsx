@@ -9,7 +9,7 @@ const industrialRuggedProducts = [
     id: 1,
     model: 'SUL-4GP2S',
     category: 'Un-Managed PoE',
-    description: 'Unmanaged Gigabit Poe Industrial Switch.',
+    description: 'Unmanaged Gigabit PoE Industrial Switch.',
     imageUrl: hero,
     features: ['4*10/100/1000Tx PoE Ports + 2*100/1000 SFP Slot', 'DIN Rail Mount', 'Dual DC power Input', '120W Total Poe budget']
   },
@@ -17,7 +17,7 @@ const industrialRuggedProducts = [
     id: 2,
     model: 'SUL-8GP2S',
     category: 'Un-Managed PoE',
-    description: 'Unmanaged Gigabit Poe Industrial Switch.',
+    description: 'Unmanaged Gigabit PoE Industrial Switch.',
     imageUrl: hero,
     features: ['8*10/100/1000Tx PoE Ports + 2*100/1000 SFP Slot', 'DIN Rail Mount', 'Dual DC power Input', '240W Total Poe budget']
   },
@@ -26,7 +26,7 @@ const industrialRuggedProducts = [
     id: 3,
     model: 'SUL-4GE2S',
     category: 'Un-Managed Non PoE',
-    description: 'Unmanaged Gigabit Non Poe Industrial Switch.',
+    description: 'Unmanaged Gigabit Non PoE Industrial Switch.',
     imageUrl: hero,
     features: ['4*10/100/1000Tx Ports + 2*100/1000 SFP Slot', 'DIN Rail Mount', 'Dual DC power Input']
   },
@@ -34,7 +34,7 @@ const industrialRuggedProducts = [
     id: 4,
     model: 'SUL-8GE2S',
     category: 'Un-Managed Non PoE',
-    description: 'Unmanaged Gigabit Non Poe Industrial Switch.',
+    description: 'Unmanaged Gigabit Non PoE Industrial Switch.',
     imageUrl: hero,
     features: ['8*10/100/1000Tx Ports + 2*100/1000 SFP Slot', 'DIN Rail Mount', 'Dual DC power Input']
   },
@@ -42,7 +42,7 @@ const industrialRuggedProducts = [
     id: 5,
     model: 'SUL-24GE2S',
     category: 'Un-Managed Non PoE',
-    description: 'Unmanaged Gigabit Non Poe Industrial Switch.',
+    description: 'Unmanaged Gigabit Non PoE Industrial Switch.',
     imageUrl: hero,
     features: ['24*10/100/1000Tx Ports + 2*100/1000 SFP Slot', 'Rack Mountable', 'Dual DC power Input']
   },
@@ -51,7 +51,7 @@ const industrialRuggedProducts = [
     id: 6,
     model: 'SML-4GP2S',
     category: 'Managed PoE',
-    description: 'Managed Gigabit Poe Industrial Switch.',
+    description: 'Managed Gigabit PoE Industrial Switch.',
     imageUrl: hero,
     features: ['4*10/100/1000Tx PoE Ports + 2*100/1000 SFP Slot', 'DIN Rail Mount', 'Dual DC power Input', '120W Total Poe budget']
   },
@@ -59,7 +59,7 @@ const industrialRuggedProducts = [
     id: 7,
     model: 'SML-8GP2S',
     category: 'Managed PoE',
-    description: 'Managed Gigabit Poe Industrial Switch.',
+    description: 'Managed Gigabit PoE Industrial Switch.',
     imageUrl: hero,
     features: ['8*10/100/1000Tx PoE Ports + 2*100/1000 SFP Slot', 'DIN Rail Mount', 'Dual DC power Input', '240W Total Poe budget']
   },
@@ -67,7 +67,7 @@ const industrialRuggedProducts = [
     id: 8,
     model: 'SML-8GP2S-BT',
     category: 'Managed PoE',
-    description: 'Managed Gigabit Poe Industrial Switch.',
+    description: 'Managed Gigabit PoE Industrial Switch.',
     imageUrl: hero,
     features: ['8*10/100/1000Tx PoE Ports + 2*100/1000 SFP Slot', 'Ports 1-8 High Poe 802.3 BT', 'Dual DC power Input', '660W Total Poe budget']
   },
@@ -75,7 +75,7 @@ const industrialRuggedProducts = [
     id: 9,
     model: 'SML-8GP4S',
     category: 'Managed PoE',
-    description: 'Managed Gigabit Poe Industrial Switch.',
+    description: 'Managed Gigabit PoE Industrial Switch.',
     imageUrl: hero,
     features: ['8*10/100/1000Tx PoE Ports + 4*100/1000 SFP Slot', 'DIN Rail Mount', 'Dual DC power Input', '240W Total Poe budget']
   },
@@ -83,7 +83,7 @@ const industrialRuggedProducts = [
     id: 10,
     model: 'SML-8GP10S',
     category: 'Managed PoE',
-    description: 'Managed Gigabit Poe Industrial Switch.',
+    description: 'Managed Gigabit PoE Industrial Switch.',
     imageUrl: hero,
     features: ['8*10/100/1000Tx PoE Ports + 10*100/1000 SFP Slot', 'DIN Rail Mount', 'Dual DC power Input', '240W Total Poe budget']
   },
@@ -91,7 +91,7 @@ const industrialRuggedProducts = [
     id: 11,
     model: 'SML-16GP2S',
     category: 'Managed PoE',
-    description: 'Managed Gigabit Poe Industrial Switch.',
+    description: 'Managed Gigabit PoE Industrial Switch.',
     imageUrl: hero,
     features: ['16*10/100/1000Tx PoE Ports + 2*100/1000 SFP Slot', 'DIN Rail Mount', 'Dual DC power Input', '240W Total Poe budget']
   },
@@ -99,7 +99,7 @@ const industrialRuggedProducts = [
     id: 12,
     model: 'SML-24GP4C',
     category: 'Managed PoE',
-    description: 'Managed Gigabit Poe Industrial Switch.',
+    description: 'Managed Gigabit PoE Industrial Switch.',
     imageUrl: hero,
     features: ['24*10/100/1000Tx PoE Ports + 4*100/1000 Combo (SFP/RJ-45) Ports', 'Rack Mountable', 'Dual AC+DC power Input', '450W Total Poe budget']
   },
@@ -107,7 +107,7 @@ const industrialRuggedProducts = [
     id: 13,
     model: 'SCL-8GP-4XS',
     category: 'Managed PoE',
-    description: 'L3 managed Gigabit Poe Industrial Switch.',
+    description: 'L3 managed Gigabit PoE Industrial Switch.',
     imageUrl: hero,
     features: ['8*10/100/1000Tx PoE Ports + 4*1G/10G SFP Slot', 'DIN Rail Mount', 'Dual DC power Input', '300W Total Poe budget']
   },
@@ -115,7 +115,7 @@ const industrialRuggedProducts = [
     id: 14,
     model: 'SCL-16GP-4XS',
     category: 'Managed PoE',
-    description: 'L3 managed Gigabit Poe Industrial Switch.',
+    description: 'L3 managed Gigabit PoE Industrial Switch.',
     imageUrl: hero,
     features: ['16*10/100/1000Tx PoE Ports + 4*1G/10G SFP Slot', 'DIN Rail Mount', 'Dual DC power Input', '400W Total Poe budget']
   },
@@ -123,7 +123,7 @@ const industrialRuggedProducts = [
     id: 15,
     model: 'SCL-24GP-4XS',
     category: 'Managed PoE',
-    description: 'L3 managed Gigabit Poe Industrial Switch.',
+    description: 'L3 managed Gigabit PoE Industrial Switch.',
     imageUrl: hero,
     features: ['24*10/100/1000Tx PoE Ports + 4*1G/10G SFP Slot', 'Rack Mountable', 'Dual AC+DC power Input', '450W Total Poe budget']
   },
@@ -132,7 +132,7 @@ const industrialRuggedProducts = [
     id: 16,
     model: 'SML-4GE2S',
     category: 'Managed Non PoE',
-    description: 'Managed Gigabit Non Poe Industrial Switch.',
+    description: 'Managed Gigabit Non PoE Industrial Switch.',
     imageUrl: hero,
     features: ['4*10/100/1000Tx Ports + 2*100/1000 SFP Slot', 'DIN Rail Mount', 'Dual DC power Input']
   },
@@ -140,7 +140,7 @@ const industrialRuggedProducts = [
     id: 17,
     model: 'SML-8GE2S',
     category: 'Managed Non PoE',
-    description: 'Managed Gigabit Non Poe Industrial Switch.',
+    description: 'Managed Gigabit Non PoE Industrial Switch.',
     imageUrl: hero,
     features: ['8*10/100/1000Tx Ports + 2*100/1000 SFP Slot', 'DIN Rail Mount', 'Dual DC power Input']
   },
@@ -148,7 +148,7 @@ const industrialRuggedProducts = [
     id: 18,
     model: 'SML-8GE4S',
     category: 'Managed Non PoE',
-    description: 'Managed Gigabit Non Poe Industrial Switch.',
+    description: 'Managed Gigabit Non PoE Industrial Switch.',
     imageUrl: hero,
     features: ['8*10/100/1000Tx Ports + 4*100/1000 SFP Slot', 'DIN Rail Mount', 'Dual DC power Input']
   },
@@ -164,7 +164,7 @@ const industrialRuggedProducts = [
     id: 20,
     model: 'SML-16GE2S',
     category: 'Managed Non PoE',
-    description: 'Managed Gigabit Non Poe Industrial Switch.',
+    description: 'Managed Gigabit Non PoE Industrial Switch.',
     imageUrl: hero,
     features: ['16*10/100/1000Tx Ports + 2*100/1000 SFP Slot', 'DIN Rail Mount', 'Dual DC power Input']
   },
@@ -172,7 +172,7 @@ const industrialRuggedProducts = [
     id: 21,
     model: 'SML-24GE4C',
     category: 'Managed Non PoE',
-    description: 'Managed Gigabit Non Poe Industrial Switch.',
+    description: 'Managed Gigabit Non PoE Industrial Switch.',
     imageUrl: hero,
     features: ['24*10/100/1000Tx Ports + 4*100/1000 Combo (SFP/RJ-45) Ports', 'Rack Mountable', 'Dual AC+DC power Input']
   },
@@ -180,7 +180,7 @@ const industrialRuggedProducts = [
     id: 22,
     model: 'SCL-8GE-4XS',
     category: 'Managed Non PoE',
-    description: 'L3 managed Gigabit Non Poe Industrial Switch.',
+    description: 'L3 managed Gigabit Non PoE Industrial Switch.',
     imageUrl: hero,
     features: ['8*10/100/1000Tx Ports + 4*1G/10G SFP Slot', 'DIN Rail Mount', 'Dual DC power Input']
   },
@@ -188,7 +188,7 @@ const industrialRuggedProducts = [
     id: 23,
     model: 'SCL-16GE-4XS',
     category: 'Managed Non PoE',
-    description: 'L3 managed Gigabit Non Poe Industrial Switch.',
+    description: 'L3 managed Gigabit Non PoE Industrial Switch.',
     imageUrl: hero,
     features: ['16*10/100/1000Tx Ports + 4*1G/10G SFP Slot', 'DIN Rail Mount', 'Dual DC power Input']
   },
@@ -196,22 +196,26 @@ const industrialRuggedProducts = [
     id: 24,
     model: 'SCL-24GE-4XS',
     category: 'Managed Non PoE',
-    description: 'L3 managed Gigabit Non Poe Industrial Switch.',
+    description: 'L3 managed Gigabit Non PoE Industrial Switch.',
     imageUrl: hero,
     features: ['24*10/100/1000Tx Ports + 4*1G/10G SFP Slot', 'Rack Mountable', 'Dual AC+DC power Input']
   },
 ];
 
 const relatedProductsData = [
-  { id: 1, name: 'DCLS-12XF-R', imageUrl: hero },
+   { id: 1, name: 'DCLS-12XF-R', imageUrl: hero },
   { id: 2, name: 'DCLS-24GPP-4XF-R', imageUrl: hero },
-  { id: 3, name: 'DCLS-48GPP-4XF-R', imageUrl: hero },
-  { id: 4, name: 'DCS-48GPP-4XF', imageUrl: hero },
-  { id: 5, name: 'AWG-3000', imageUrl: hero },
-  { id: 6, name: 'AWG-5000', imageUrl: hero },
-  { id: 7, name: 'DSMS-24GPP-4XF', imageUrl: hero },
-  { id: 8, name: 'OUS-24GP-2G-2F', imageUrl: hero },
-  { id: 9, name: 'DMS-24GPP-4C', imageUrl: hero },
+  { id: 3, name: 'DCLS-24G-4XF-R', imageUrl: hero },
+  { id: 4, name: 'DCLS-48GPP-4XF-R', imageUrl: hero },
+  { id: 5, name: 'DCLS-48GPP-4XF-2S-R', imageUrl: hero },
+  { id: 6, name: 'DCLS-48GPP-4XF-2S', imageUrl: hero },
+  { id: 7, name: 'DCLS-48GPP-4XF', imageUrl: hero },
+  { id: 8, name: 'DCLS-48G-4XF-2S-R', imageUrl: hero },
+  { id: 9, name: 'DCLS-24GPP25-6XF-R', imageUrl: hero },
+  { id: 10,name: 'DCLS-48G-4XF-2S', imageUrl: hero },
+  { id: 11,name: 'DCLS-48G-4XF-R', imageUrl: hero },
+  { id: 12,name: 'DCLS-48G-4XF', imageUrl: hero },
+  { id: 13,name: 'DCLS-24GPP25-6XF', imageUrl: hero },
 ];
 
 const RelatedProductsSection = () => {
@@ -318,7 +322,7 @@ const IndustrialRuggedSwitchesProductPage = () => {
       <div className="bg-white py-12 shadow-md">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-extrabold text-gray-900 tracking-tight mb-4 border-b-4 border-green-500 inline-block pb-1">
-            Industrial & Rugged Switches
+            Industrial Switches
           </h1>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
             Industrial-grade networking solutions built for harsh environments and mission-critical applications.

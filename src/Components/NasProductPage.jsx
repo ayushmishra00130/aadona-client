@@ -163,15 +163,12 @@ const nasProducts = [
 ];
 
 const relatedProductsData = [
-  { id: 1, name: 'ASW-1200', imageUrl: hero },
-  { id: 2, name: 'AXW-3000', imageUrl: hero },
-  { id: 3, name: 'ASC-1200L V2', imageUrl: hero },
-  { id: 4, name: 'AXC-3600', imageUrl: hero },
-  { id: 5, name: 'AOS-1200', imageUrl: hero },
-  { id: 6, name: 'AXO-1800L', imageUrl: hero },
-  { id: 7, name: 'AWG-3000', imageUrl: hero },
-  { id: 8, name: 'AWG-5000', imageUrl: hero },
-  { id: 9, name: 'AWG-7000', imageUrl: hero },
+
+  { id: 1, name: 'DIANA:28GPP-4C-ACD', imageUrl: hero },
+   { id: 2, name: 'DIANA:8GP-2F-ACD', imageUrl: hero },
+    { id: 3, name: 'DIANA:16GP-2F', imageUrl: hero },
+  
+  
 ];
 
 const RelatedProductsSection = () => {
@@ -282,15 +279,15 @@ const NasProductPage = () => {
       {/* Filters */}
       <div className="max-w-7xl mx-auto px-4 mt-10 space-y-8 flex flex-col items-center">
         {categorySegments[activeCategory].length > 1 && (
-          <div className="flex items-center gap-2 bg-gray-200/60 p-1.5 rounded-full border border-gray-300">
+          <div className="flex items-center gap-4">
             {categorySegments[activeCategory].map((seg) => (
               <button
                 key={seg}
                 onClick={() => setActiveSegment(seg)}
-                className={`px-10 py-2 rounded-full text-sm font-bold transition-all duration-300 ${
+                className={`px-10 py-3 rounded-lg text-base font-semibold transition-all duration-300 border-2 ${
                   activeSegment === seg
-                    ? 'bg-white text-green-700 shadow-md'
-                    : 'text-gray-500'
+                    ? 'bg-green-600 text-white border-green-600 shadow-md'
+                    : 'bg-white text-gray-600 border-gray-300 hover:border-gray-400'
                 }`}
               >
                 {seg}
