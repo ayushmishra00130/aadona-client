@@ -1,5 +1,5 @@
 import React from 'react';
-import hero from '../assets/hero1.png'; // Local image used for all cards
+import hero from '../assets/hero1.png';
 import switches from '../assets/switches.png'
 import industrial from '../assets/industrial.png'
 import wireless from '../assets/wireless.png'
@@ -7,92 +7,113 @@ import cloud from '../assets/cloud.png'
 import firewall from '../assets/firewall.png'
 import fiber from '../assets/fiber.png'
 
-// Product data (original 6 products)
-const originalProducts = [
+// Updated Product data with AADONA Product Categories (12 products to match available images)
+const products = [
+  // Active Products
   {
     id: 1,
-    title: "Network Switches",
-    description: "Reliable and scalable switching solutions for SMB to Enterprise networks.",
-    imageUrl: switches,
+    title: "Wireless Access Points and Controllers",
+    description: "Secure and fast wireless networking for enterprises and smart cities.",
+    imageUrl: wireless,
+    category: "Active Products"
   },
   {
     id: 2,
-    title: "Industrial & Rugged Switches",
-    description: "Durable, high-performance switches built for critical industrial environments.",
-    imageUrl: industrial,
+    title: "Network Switches",
+    description: "Reliable and scalable switching solutions for SMB to Enterprise networks.",
+    imageUrl: switches,
+    category: "Active Products"
   },
   {
     id: 3,
-    title: "Wireless Solutions",
-    description: "Secure and fast wireless networking for enterprises and smart cities.",
-    imageUrl: wireless,
+    title: "Industrial Switches",
+    description: "Durable, high-performance switches built for critical industrial environments.",
+    imageUrl: industrial,
+    category: "Active Products"
   },
   {
     id: 4,
-    title: "Cloud Management Platform",
-    description: "Centralized management and monitoring for all your network devices globally.",
-    imageUrl: cloud,
+    title: "UTM and Firewalls",
+    description: "Next-generation security to protect your network from advanced threats and intrusions.",
+    imageUrl: firewall,
+    category: "Active Products"
   },
   {
     id: 5,
-    title: "Security & Firewall Appliances",
-    description: "Next-generation security to protect your network from advanced threats and intrusions.",
-    imageUrl: firewall,
+    title: "IP Cameras",
+    description: "Advanced surveillance cameras for comprehensive security monitoring.",
+    imageUrl: cloud,
+    category: "Active Products"
   },
   {
     id: 6,
-    title: "Fiber Optic Modules",
+    title: "SFP Modules and Media Converters",
     description: "High-speed and reliable fiber transceivers for long-distance data transmission.",
     imageUrl: fiber,
+    category: "Active Products"
+  },
+  {
+    id: 7,
+    title: "Surveillance Switches",
+    description: "Specialized switches designed for IP surveillance systems.",
+    imageUrl: switches,
+    category: "Active Products"
+  },
+  {
+    id: 8,
+    title: "Network Attached Storages",
+    description: "Centralized storage solutions for enterprise data management.",
+    imageUrl: cloud,
+    category: "Active Products"
+  },
+  {
+    id: 9,
+    title: "Servers and Work Stations",
+    description: "High-performance computing infrastructure for business operations.",
+    imageUrl: industrial,
+    category: "Active Products"
+  },
+  // Passive Products
+  {
+    id: 10,
+    title: "Ethernet Cables & Patch Cords",
+    description: "Quality copper cabling solutions for reliable network connectivity.",
+    imageUrl: fiber,
+    category: "Passive Products"
+  },
+  {
+    id: 11,
+    title: "Fibre Cables & Patch Cords",
+    description: "High-performance fiber optic cables for high-speed data transmission.",
+    imageUrl: wireless,
+    category: "Passive Products"
+  },
+  {
+    id: 12,
+    title: "Patch Panels and LIU's",
+    description: "Professional cable management and termination solutions.",
+    imageUrl: firewall,
+    category: "Passive Products"
   },
 ];
-
-// Duplicate and re-ID the products to create a total of 12
-const duplicatedProducts = originalProducts.map(p => ({
-    ...p,
-    id: p.id + 6, // Assign new ID
-    title: `${p.title} (2nd)`, // Optional: Mark as duplicate to distinguish them if needed
-}));
-
-// Combine the original and duplicated products
-const products = [...originalProducts, ...duplicatedProducts];
-
-
-// Inline SVG for arrow icon (kept for completeness, though commented out in usage)
-const RightArrowIcon = () => (
-  <svg
-    // xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
-  >
-    <path d="M5 12h14" />
-    <path d="m12 5 7 7-7 7" />
-  </svg>
-);
 
 // Product card component
 const ProductCard = ({ product }) => {
   const { title, description, imageUrl } = product;
 
   return (
-    
     <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden flex flex-col">
-      <div className="w-full h-32 overflow-hidden"> {/* Reduced height for smaller cards in a 6-column layout */}
+      <div className="w-full h-32 overflow-hidden">
         <img
           src={imageUrl}
           alt={title}
           className="w-full h-full object-cover transition duration-300 hover:scale-[1.02]"
         />
       </div>
-      <div className="p-4 flex flex-col justify-between grow"> {/* Reduced padding */}
+      <div className="p-4 flex flex-col justify-between grow">
         <div>
-          <h3 className="text-base font-bold text-gray-900 mb-1">{title}</h3> {/* Reduced font size */}
-          <p className="text-gray-600 text-xs">{description}</p> {/* Reduced font size */}
+          <h3 className="text-base font-bold text-gray-900 mb-1">{title}</h3>
+          <p className="text-gray-600 text-xs">{description}</p>
         </div>
         <div className="mt-3">
           <a
@@ -100,8 +121,7 @@ const ProductCard = ({ product }) => {
             className="text-green-600 hover:text-green-700 transition duration-150 text-xs font-semibold flex items-center group"
             onClick={(e) => e.preventDefault()}
           >
-            {/* Learn Explore Product
-            <RightArrowIcon /> */}
+            {/* Explore Product */}
           </a>
         </div>
       </div>
@@ -116,14 +136,10 @@ const App = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-extrabold text-green-700 sm:text-4xl inline-block pb-1">
-            Our Soultion Portfolio
+            Our Solution Portfolio
           </h2>
         </div>
-        {/*
-          Modified grid classes:
-          - grid-cols-2 for small screens (sm:grid-cols-3)
-          - lg:grid-cols-6 to display 6 cards per row on large screens
-        */}
+        
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
